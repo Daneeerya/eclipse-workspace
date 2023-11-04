@@ -1,0 +1,49 @@
+package framework_oop_prods;
+import framework_oop_prods.product;
+
+public class smartphone extends product {
+	//Atributes
+	private int ID_product;
+	private String brand;
+	private float price;
+	
+	//constructor
+	public smartphone(int stock, float weight, String iD_prod,  String brand, float price) {
+		super(stock, weight, iD_prod);
+		this.brand = brand;
+		this.price = price;
+	}
+
+	//getters
+	public int getID_product() {
+		return ID_product;
+	}
+
+	public String getBrand() {
+		return brand;
+	}
+	
+	public float getPrice() {
+		return price;
+	}
+
+	//setters
+	public void setBrand(String brand) {
+		this.brand = brand;
+	}
+	
+	public void setID_product(int iD_product) {
+		ID_product = iD_product;
+	}
+	
+	public void setPrice(float price) {
+		this.price = price;
+	}
+	
+	//ToString
+	@Override
+	public String toString() {
+		return "smartphone [ID_product=" + ID_product + ", brand=" + brand + ", price=" + price + "]";
+	}
+
+}

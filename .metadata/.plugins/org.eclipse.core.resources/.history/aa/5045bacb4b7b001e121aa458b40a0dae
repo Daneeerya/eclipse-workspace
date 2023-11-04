@@ -1,0 +1,21 @@
+package objects;
+
+import javax.swing.JOptionPane;
+
+public class main {
+
+	public static void main(String[] args) {
+		String ID ="";
+		float price= 0.0f;
+		int dimension =0;
+		String brand = "";
+		ID = validators.valida_string("Introduce un ID ", "ID");
+		price = validators.valida_float("Introduce un numero decimal ", "Numero decimal");
+		dimension = validators.valida_int("Introduce una dimensión ", "dimensión");
+		brand = validators.valida_string("Introduce una marca ", "Marca");
+		product_inici P1 = new product_inici (ID, price, dimension, brand);
+		JOptionPane.showMessageDialog(null, P1.toString());
+		P1.setID(ID);
+		P1=null;
+	}
+}

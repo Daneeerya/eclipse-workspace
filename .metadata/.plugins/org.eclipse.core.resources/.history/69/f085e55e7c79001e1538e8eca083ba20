@@ -1,0 +1,157 @@
+package framework_oop_prods;
+import javax.swing.JOptionPane;
+
+
+public class menu2 {
+	public static void menu2() {
+			int option = 0, option1 = 0;
+			laptop L = null;
+			smartphone S = null;
+			accessory A = null;
+			String[] mother = { "Laptop","Smartphone","Accessory","Exit" };
+			String [] child = {"Create","read","Update", "Delete", "Print","Return"};
+			
+			do {
+				option = menus.menu(mother, " What option do you choose?", "Primary Menu");
+			switch (option) {
+			case 0: // Laptop
+				do {
+					option1 = menus.menu(child, " What option do you choose?", "CRUD Menu");
+					switch (option1) { //CRUDMENU
+					case 0: // Create laptop
+						L = (laptop)CRUD.create();
+						System.out.println ("Ha entrado al create");
+						JOptionPane.showMessageDialog(null, "Laptop create correctly");
+						break;
+						
+					case 1: // Read laptop
+						if (L == null) {	
+							JOptionPane.showMessageDialog(null, "You must create the product", "Error",JOptionPane.ERROR_MESSAGE);
+						} else {
+							CRUD.read_one(L);
+						}	
+						break;
+						
+					case 2: // Update
+						if (L == null) {
+							JOptionPane.showMessageDialog(null, "You must create the product", "Error",JOptionPane.ERROR_MESSAGE);
+						} else {
+						L = (laptop)CRUD.update(L);
+						}
+						break;
+						
+					case 3: //Delete
+						if (L == null) {
+							JOptionPane.showMessageDialog(null, "You must create the product", "Error",JOptionPane.ERROR_MESSAGE);
+						} else {
+							L = (laptop)CRUD.delete(L);
+							JOptionPane.showMessageDialog(null, "Laptop deleted", "Information",JOptionPane.INFORMATION_MESSAGE);
+						} // end else
+						break;
+					case 4: // Print laptop
+						if (L == null) {	
+							JOptionPane.showMessageDialog(null, "You must create the product", "Error",JOptionPane.ERROR_MESSAGE);
+						} else {
+							CRUD.read(L);
+						}	
+						break;
+						
+					case 5://Exit
+//						JOptionPane.showMessageDialog(null, "Thanks for use the application");
+						
+						break;
+					default: 
+						
+						option1=4;
+					}
+				}while (option1!=4);
+			
+			case 1: // Smartphone
+				do {
+					option1 = menus.menu(child, " What option do you choose?", "CRUD Menu");
+					switch (option1) { //CRUDMENU
+					case 0: // Create product smartphone
+						S = (smartphone)CRUD.create();
+						JOptionPane.showMessageDialog(null, "Smartphone create correctly");
+						break;
+						
+					case 1: // read product smartphone
+						CRUD.read(S);
+						break;
+						
+					case 2: // Update 
+						S = (smartphone)CRUD.update(S);
+						 break;
+						
+					case 3: //Delete
+						if (S == null) {
+							JOptionPane.showMessageDialog(null, "You must create the product", "Error",JOptionPane.ERROR_MESSAGE);
+						} else {
+							S = null; 
+							JOptionPane.showMessageDialog(null, "Smartphone deleted", "Information",JOptionPane.INFORMATION_MESSAGE);
+							return; // Devolver null para indicar que el objeto se ha eliminado
+						} // end else
+						
+					case 4: // Exit
+						JOptionPane.showMessageDialog(null, "Thanks for use the application");
+						break;
+					default: 
+						option=4;
+						break;
+						
+					}
+					}while (option1!=4);
+				
+				break;
+			case 2: //Accessory
+				do {
+					option1 = menus.menu(child, " What option do you choose?", "CRUD Menu");
+					switch (option1) { //CRUDMENU
+					case 0: // Create product accessory
+						A = (accessory)CRUD.create();
+						JOptionPane.showMessageDialog(null, "Accessory create correctly");
+						break;
+						
+					case 1: // read product smartphone
+//						A = (smartphone)CRUD.read(p);
+						break;
+						
+					case 2: // Update 
+						A = (accessory)CRUD.update(A);
+						break;
+						
+					case 3: //Delete
+						if (A == null) {
+							JOptionPane.showMessageDialog(null, "You must create the product", "Error",JOptionPane.ERROR_MESSAGE);
+						} else {
+							A = (accessory) CRUD.delete(A);
+							JOptionPane.showMessageDialog(null, "Accessory deleted", "Information",JOptionPane.INFORMATION_MESSAGE);
+							return; // Devolver null para indicar que el objeto se ha eliminado
+						} // end else
+						break;
+						
+					case 4://Exit
+						JOptionPane.showMessageDialog(null, "Thanks for use the application");
+						break;
+					default: 
+						
+						option1=4;
+						break;
+						
+					}
+				}while (option1!=4);
+				
+				break;
+			case 3: // Exit
+				JOptionPane.showMessageDialog(null, "Thanks for use the application");
+				break;
+			default: 
+				option=3;
+				break;
+				
+			}
+			}while (option!=3);
+			
+		
+		}// end-void
+}//end-class

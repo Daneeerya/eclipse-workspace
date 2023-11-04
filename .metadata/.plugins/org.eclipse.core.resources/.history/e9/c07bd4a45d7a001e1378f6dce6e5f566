@@ -1,0 +1,92 @@
+package framework_oop_prods.copy;
+import framework_oop_prods.product;
+
+public class smartphone extends product {
+	//Atributes
+	private String brand;
+	private float price;
+ 	private int	num_dies_ultimes_unitats;
+ 	private String f_ult_unitates;
+	private int num_dias_sales;
+
+
+
+	public smartphone(int stock, float weight, String iD_prod, String brand, float price, int num_dies_ultimes_unitats,
+			String f_ult_unitates, int num_dias_sales) {
+		super(stock, weight, iD_prod);
+		this.brand = brand;
+		this.price = price;
+		this.num_dies_ultimes_unitats = num_dies_ultimes_unitats;
+		this.f_ult_unitates = f_ult_unitates;
+		this.num_dias_sales = num_dias_sales;
+	}
+
+	public String getBrand() {
+		return brand;
+	}
+
+	public void setBrand(String brand) {
+		this.brand = brand;
+	}
+
+	public float getPrice() {
+		return price;
+	}
+
+
+
+	public void setPrice(float price) {
+		this.price = price;
+	}
+
+
+
+	public int getNum_dies_ultimes_unitats() {
+		return num_dies_ultimes_unitats;
+	}
+
+
+
+	public void setNum_dies_ultimes_unitats(int num_dies_ultimes_unitats) {
+		this.num_dies_ultimes_unitats = num_dies_ultimes_unitats;
+	}
+
+
+
+	public String getF_ult_unitates() {
+		return f_ult_unitates;
+	}
+
+
+
+	public void setF_ult_unitates(String f_ult_unitates) {
+		this.f_ult_unitates = f_ult_unitates;
+	}
+
+
+
+	public int getNum_dias_sales() {
+		return num_dias_sales;
+	}
+
+
+
+	public void setNum_dias_sales(int num_dias_sales) {
+		this.num_dias_sales = num_dias_sales;
+	}
+
+
+
+	@Override
+	public String toString() {
+		String cad = "";
+		cad = cad + ("ID: " + super.getID_prod() + "\n" +
+					 "Stock: " + super.getStock() + "\n" +
+					 "Weight: " + super.getWeight() + "\n" +
+					 "Creation Date: " + this.getBrand() + "\n" +
+					 "Price: " + this.getPrice() + "\n" +
+					 "Number of days last units: " + this.getNum_dies_ultimes_unitats() + "\n" +
+					 "Date last units: " + this.getF_ult_unitates()+ "\n" +
+					 "Number of days with sales: " + this.getNum_dias_sales());
+		return cad;	}
+}

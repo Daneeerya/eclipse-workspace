@@ -1,0 +1,45 @@
+package objects;
+
+public class product_inici {
+	private String ID;
+	private float price;
+	private int dimension;
+	private String brand;
+	public product_inici(String iD, float price, int dimension, String brand) {
+		super();
+		this.ID = iD;
+		this.price = price;
+		this.dimension = dimension;
+		this.brand = brand;
+	}
+	public String getID() {
+		return ID;
+	}
+	public void setID(String iD) {
+		this.ID = iD;
+	}
+	public float getPrice() {
+		return price;
+	}
+	public void setPrice(float price) {
+		this.price = price;
+	}
+	public int getDimension() {
+		return dimension;
+	}
+	public void setDimension(int dimension) {
+		this.dimension = dimension;
+	}
+	public String getBrand() {
+		return brand;
+	}
+	public void setBrand(String brand) {
+		this.brand = brand;
+	}
+	@Override
+	public String toString() {
+		return "objects [ID=" + this.ID + ", price=" + this.price + ", dimension=" + this.dimension + ", brand=" + this.brand + "]";
+	}
+	
+
+}

@@ -1,0 +1,4 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<session version="1.0">
+<refactoring comment="Rename package &apos;frameworkf&apos; to &apos;framework_ejercicios&apos;&#x0D;&#x0A;- Original project: &apos;framework&apos;&#x0D;&#x0A;- Original element: &apos;framework/frameworkf&apos;&#x0D;&#x0A;- Renamed element: &apos;framework/framework_ejercicios&apos;&#x0D;&#x0A;- Update references to refactored element&#x0D;&#x0A;- Update fully qualified names in &apos;*&apos; files&#x0D;&#x0A;- Update textual occurrences in comments and strings" description="Rename package &apos;frameworkf&apos;" flags="589830" hierarchical="false" id="org.eclipse.jdt.ui.rename.package" input="/&lt;frameworkf" name="framework_ejercicios" patterns="*" qualified="true" references="true" stamp="1697277409192" textual="true" version="1.0"/>
+</session>

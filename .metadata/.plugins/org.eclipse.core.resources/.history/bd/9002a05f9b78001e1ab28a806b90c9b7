@@ -1,0 +1,10 @@
+package framework_oop_prueba;
+
+public class accessory extends product {
+// Atributes
+	private float price;
+	private float price_last_units;
+	private float price_sales;
+	private String f_sales;
+	private String type_of_product;
+}

@@ -1,0 +1,5 @@
+package framework_oop_prods_sincad;
+
+public class regex {
+	private static final String Expresion_fecha="^([0-2][0-9]|3[0-1])(\/|-)(0[1-9]|1[0-2])(\/|-)(\d{4})$";
+}

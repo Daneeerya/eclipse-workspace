@@ -1,0 +1,16 @@
+package framework_ejercicios;
+
+public class ejercicios {
+
+	public static void ejercicio1() {
+		
+	}//end-static
+	
+	public static void ejercicio2() {
+		
+	}//end-static
+	
+	public static void ejercicio3() {
+		
+	}//end-static
+}//end-class

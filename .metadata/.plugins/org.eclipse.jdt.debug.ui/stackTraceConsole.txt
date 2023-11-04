@@ -1,0 +1,2 @@
+traure els 4 1rs nums perfectes, el num perfecte es quan la suma dels divisors de num excepte ell mateix dona el num. Els 4 
+primers numeros perfecte es 4, 28, 496, 8128

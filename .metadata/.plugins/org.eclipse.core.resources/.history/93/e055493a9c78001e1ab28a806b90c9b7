@@ -1,0 +1,17 @@
+package framework_oop_prueba;
+
+public class smartphone extends product {
+// Atributes
+	private int n_days_last_units;
+	private int n_sales_days;
+	private float price;
+	private String brand;
+	private String date_last_units;
+	@Override
+	public String toString() {
+		// TODO Auto-generated method stub
+		return null;
+	}
+	
+	
+}

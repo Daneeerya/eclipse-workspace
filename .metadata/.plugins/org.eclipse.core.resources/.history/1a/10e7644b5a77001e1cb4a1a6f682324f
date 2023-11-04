@@ -1,0 +1,42 @@
+package framework_oop_prods;
+import framework_oop_prods.product;
+
+public class accessory extends product {
+	//Atributes
+	private String type_of_product;
+	private float price;
+	
+	//constructor
+	public accessory(int stock, float weight, String iD_prod, String type_of_product, float price) {
+		super(stock, weight, iD_prod);
+
+		this.type_of_product = type_of_product;
+		this.price = price;
+	}
+	
+	//getters and setters
+
+
+	public String getType_of_product() {
+		return type_of_product;
+	}
+
+	public void setType_of_product(String type_of_product) {
+		this.type_of_product = type_of_product;
+	}
+
+	public float getPrice() {
+		return price;
+	}
+
+	public void setPrice(float price) {
+		this.price = price;
+	}
+	
+	//toString
+	@Override
+	public String toString() {
+		return "accessroy [ID_product=" + ID_product + ", type_of_product=" + type_of_product + ", price=" + price
+				+ "]";
+	}
+}
