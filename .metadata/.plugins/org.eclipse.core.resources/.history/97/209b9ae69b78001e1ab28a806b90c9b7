@@ -1,5 +1,0 @@
-package framework_oop_prueba;
-
-public class smartphone extends product {
-
-}

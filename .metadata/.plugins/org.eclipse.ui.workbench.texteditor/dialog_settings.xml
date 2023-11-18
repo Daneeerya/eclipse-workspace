@@ -6,45 +6,45 @@
 		<item key="wholeword" value="false"/>
 		<item key="incremental" value="false"/>
 		<item key="isRegEx" value="false"/>
-		<item key="selection" value="cad ="/>
+		<item key="selection" value=", "/>
 		<list key="findhistory">
-			<item value="JOptionPane.showMessageDialog(null, "/>
-			<item value=", &quot;Result&quot;, JOptionPane.INFORMATION_MESSAGE);"/>
-			<item value="cad = "/>
-			<item value="laptop"/>
-			<item value="thanks"/>
-			<item value="((smartphone)p)"/>
-			<item value="float"/>
-			<item value="flo"/>
-			<item value="flor"/>
-			<item value="read"/>
-			<item value="readProduct"/>
-			<item value="p"/>
-			<item value="product p"/>
-			<item value="CRUD.create()"/>
-			<item value="update"/>
+			<item value=","/>
+			<item value=",  "/>
+			<item value="STRING"/>
+			<item value="FLOAT"/>
+			<item value="INT"/>
+			<item value="DATE_OBJECT"/>
+			<item value="dev"/>
+			<item value="pricePromotion"/>
+			<item value="menu"/>
+			<item value="true"/>
+			<item value="fecha_devolucio"/>
+			<item value="TOTAL"/>
+			<item value="PRICE"/>
+			<item value="SET"/>
+			<item value="VALIDA"/>
 		</list>
 		<list key="replacehistory">
-			<item value="cad ="/>
-			<item value=";"/>
+			<item value=", "/>
+			<item value=","/>
 			<item value=""/>
-			<item value="read"/>
-			<item value="CRUD.create(option)"/>
-			<item value="public"/>
-			<item value="prod"/>
-			<item value="p"/>
-			<item value="Information"/>
-			<item value="option"/>
-			<item value="Smartphone"/>
-			<item value="smartphone"/>
-			<item value="option2"/>
-			<item value="option1"/>
-			<item value="continue"/>
+			<item value="returnDate"/>
+			<item value="isPromo"/>
+			<item value="module_oop"/>
+			<item value="((laptop)p)."/>
+			<item value="(smartphone)p)."/>
+			<item value="menu_oop_cast"/>
+			<item value="menu_oop_cast."/>
+			<item value="menu_oop_cast.classes."/>
+			<item value="date_object"/>
+			<item value="(&quot;12/12/2233&quot;)"/>
+			<item value="float"/>
+			<item value="classes.date_object"/>
 		</list>
 	</section>
 	<section name="org.eclipse.ui.texteditor.FindReplaceDialog_dialogBounds">
-		<item key="DIALOG_X_ORIGIN" value="52"/>
-		<item key="DIALOG_Y_ORIGIN" value="173"/>
+		<item key="DIALOG_X_ORIGIN" value="521"/>
+		<item key="DIALOG_Y_ORIGIN" value="147"/>
 		<item key="DIALOG_WIDTH" value="407"/>
 		<item key="DIALOG_HEIGHT" value="444"/>
 		<item key="DIALOG_FONT_NAME" value="1|Segoe UI|9.0|0|WINDOWS|1|-15|0|0|0|400|0|0|0|1|0|0|0|0|Segoe UI"/>
