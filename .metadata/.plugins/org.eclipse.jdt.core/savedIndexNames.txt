@@ -3,11 +3,8 @@ INDEX VERSION 1.134+C:\Users\alber\eclipse-workspace\.metadata\.plugins\org.ecli
 2947879718.index
 410045654.index
 1779124375.index
-1865797976.index
 632575869.index
-3948686181.index
+1865797976.index
 395727182.index
-1592633535.index
-3105442930.index
 857455771.index
 3413270776.index

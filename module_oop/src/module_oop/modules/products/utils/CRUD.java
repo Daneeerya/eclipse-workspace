@@ -43,7 +43,7 @@ public class CRUD {
 			int n_days_last_units = validators.valida_int("Enter the days with promo ", "Days with promo");
 			int n_sales_days = validators.valida_int("Enter the qty of sales days", "Sales days");
 			float price_promo = validators.valida_float("Enter the price promo", "Price promo");
-			String brand = validators.valida_string("Enter the brand", "Brand");
+			String brand = special_prod.comboBrand();
 			float price_total = 0.0f;
 
 			menu.S = new smartphone(stock, weight, price, ID_prod, purchaseDate, deliveryDate, returnDate, iniPromoDate,
