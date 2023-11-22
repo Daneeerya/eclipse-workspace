@@ -28,11 +28,6 @@ public class product_data {
 		return ID;
 	}
 
-	public static String ask_brand(String product) {
-		String brand = special_prod.comboBrand();
-		return brand;
-	}
-
 	public static framework_oop_arrays.classes.date_object ask_purchaseDate() {
 		return insert_data.insert_date("purchase", "Purchase date");
 	}

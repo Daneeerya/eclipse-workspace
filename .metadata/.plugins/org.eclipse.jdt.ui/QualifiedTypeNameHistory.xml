@@ -54,10 +54,10 @@
     <fullyQualifiedTypeName name="java.lang.System"/>
     <fullyQualifiedTypeName name="framework_oop_arrays.modules.products.utils.CRUD_arrays"/>
     <fullyQualifiedTypeName name="framework_oop_arrays.modules.products.classes.laptop"/>
-    <fullyQualifiedTypeName name="framework_oop_arrays.modules.products.classes.Singleton"/>
     <fullyQualifiedTypeName name="framework_oop_arrays.modules.products.utils.functions_find"/>
     <fullyQualifiedTypeName name="framework_oop_arrays.modules.products.utils.CRUD_array.functions_delete"/>
     <fullyQualifiedTypeName name="framework_oop_arrays.utils.validators"/>
     <fullyQualifiedTypeName name="javax.swing.JOptionPane"/>
     <fullyQualifiedTypeName name="framework_oop_arrays.modules.products.utils.CRUD_array.functions_read"/>
+    <fullyQualifiedTypeName name="framework_oop_arrays.modules.products.classes.Singleton"/>
 </qualifiedTypeNameHistroy>

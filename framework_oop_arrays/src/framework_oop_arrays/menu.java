@@ -5,7 +5,6 @@ import javax.swing.JOptionPane;
 import framework_oop_arrays.modules.products.classes.accessory;
 import framework_oop_arrays.modules.products.classes.laptop;
 import framework_oop_arrays.modules.products.classes.smartphone;
-import framework_oop_arrays.modules.products.utils.CRUD;
 import framework_oop_arrays.modules.products.utils.CRUD_array.functions_create;
 import framework_oop_arrays.modules.products.utils.CRUD_array.functions_delete;
 import framework_oop_arrays.modules.products.utils.CRUD_array.functions_print;
@@ -36,7 +35,8 @@ public class menu {
 					// Read laptop
 					case 1:
 						functions_read.read_laptop(L);
-						// Update laptop
+						break;
+					// Update laptop
 					case 2:
 						functions_update.update_laptop(L);
 						break;
@@ -46,7 +46,7 @@ public class menu {
 						break;
 					// Print laptop
 					case 4:
-						functions_print.read_laptop(L);
+						functions_print.print_laptop(L);
 						break;
 					case 5: // Exit
 						break;
@@ -64,7 +64,7 @@ public class menu {
 						functions_create.create_smartphone(S);
 						break;
 					case 1: // Read Smartphone
-						functions_print.read_smartphone(S);
+						functions_read.read_smartphone(S);
 						break;
 					case 2: // Update Smartphone
 						functions_update.update_smartphone(S);
@@ -73,12 +73,7 @@ public class menu {
 						functions_delete.delete_smartphone(S);
 						break;
 					case 4: // Print Smartphone
-						if (menu.S == null) {
-							JOptionPane.showMessageDialog(null, "You must create the smartphone first!", "Error",
-									JOptionPane.ERROR_MESSAGE);
-						} else {
-							CRUD.read_all(menu.S);
-						}
+						functions_print.print_smartphone(S);
 						break;
 					case 5: // Exit
 						break;
@@ -96,7 +91,7 @@ public class menu {
 						functions_create.create_accessory(A);
 						break;
 					case 1: // Read accessory
-						functions_print.read_accessory(A);
+						functions_read.read_accessory(A);
 						break;
 					case 2: // Update accessory
 						functions_update.update_accessory(A);
@@ -105,12 +100,7 @@ public class menu {
 						functions_delete.delete_accessory(A);
 						break;
 					case 4: // Print Accessory
-						if (menu.A == null) {
-							JOptionPane.showMessageDialog(null, "You must create the accessory first!", "Error",
-									JOptionPane.ERROR_MESSAGE);
-						} else {
-							CRUD.read_all(menu.A);
-						}
+						functions_print.print_accessory(A);
 						break;
 					case 5: // Return
 						break;

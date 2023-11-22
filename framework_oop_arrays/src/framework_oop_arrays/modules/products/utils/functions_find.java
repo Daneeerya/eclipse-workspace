@@ -7,7 +7,6 @@ import framework_oop_arrays.modules.products.classes.smartphone;
 
 public class functions_find {
 	public static int find_laptop(laptop laptop) {
-
 		for (int i = 0; i <= (Singleton.productlaptop.size() - 1); i++) {
 			if ((Singleton.productlaptop.get(i).equals(laptop))) {
 				return i;

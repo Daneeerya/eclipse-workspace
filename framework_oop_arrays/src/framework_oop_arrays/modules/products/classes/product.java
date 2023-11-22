@@ -17,10 +17,10 @@ public abstract class product {
 	private float price_total;
 
 //		Constructor
-	public product(int stock, float weight, float price, String ID, date_object purchaseDate, date_object deliveryDate,
+	public product(int stock2, float weight, float price, String ID, date_object purchaseDate, date_object deliveryDate,
 			date_object returnDate, date_object startPromoDate, date_object endPromoDate, float price_total) {
 		super();
-		this.stock = stock;
+		this.stock = stock2;
 		this.weight = weight;
 		this.price = price;
 		this.ID = ID;

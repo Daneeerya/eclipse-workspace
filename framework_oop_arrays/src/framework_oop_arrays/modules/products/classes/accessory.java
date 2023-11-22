@@ -5,16 +5,18 @@ import framework_oop_arrays.modules.products.utils.product_data;
 
 public class accessory extends product {
 	// Atributes
+	private String type_of_product;
 	private float price_promo;
 
 //		Constructor
 	public accessory(int stock, float weight, float price, String ID, date_object purchaseDate,
 			date_object deliveryDate, date_object returnDate, date_object startPromoDate, date_object endPromoDate,
-			float price_total, float price_sales, float price_promo) {
+			float price_total, float price_promo, String type_of_product) {
 		super(stock, weight, price, ID, purchaseDate, deliveryDate, returnDate, startPromoDate, endPromoDate,
 				price_total);
 
 		this.price_promo = price_promo;
+		this.type_of_product = type_of_product;
 	}
 
 	public accessory() {
@@ -31,9 +33,17 @@ public class accessory extends product {
 		return price_promo;
 	}
 
+	public String getType_of_product() {
+		return type_of_product;
+	}
+
 	// Setters
 	public void setPrice_promo(float price_promo) {
 		this.price_promo = price_promo;
+	}
+
+	public void setType_of_product(String type_of_product) {
+		this.type_of_product = type_of_product;
 	}
 
 	// Functions

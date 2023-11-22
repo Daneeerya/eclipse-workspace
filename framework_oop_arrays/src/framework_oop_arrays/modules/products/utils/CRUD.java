@@ -23,11 +23,10 @@ public class CRUD {
 			framework_oop_arrays.classes.date_object returnDate = product_data.ask_returnDate(deliveryDate);
 			framework_oop_arrays.classes.date_object iniPromoDate = product_data.ask_startDatePromo(purchaseDate);
 			framework_oop_arrays.classes.date_object endPromoDate = product_data.ask_endDatePromo(iniPromoDate);
-			int n_days_with_promo = validators.valida_int("Enter the days with promo ", "Days with promo");
 			float price_promo = validators.valida_float("Enter the price promo", "Price promo");
 			float price_total = 0.0f;
 			menu.L = new laptop(stock, weight, price, ID, purchaseDate, deliveryDate, returnDate, iniPromoDate,
-					endPromoDate, n_days_with_promo, price_promo, price_total);
+					endPromoDate, price_promo, price_total);
 			menu.L.calculate_total_price();
 
 		} else if (i == 1) {
@@ -40,14 +39,12 @@ public class CRUD {
 			framework_oop_arrays.classes.date_object returnDate = product_data.ask_returnDate(deliveryDate);
 			framework_oop_arrays.classes.date_object iniPromoDate = product_data.ask_startDatePromo(purchaseDate);
 			framework_oop_arrays.classes.date_object endPromoDate = product_data.ask_endDatePromo(iniPromoDate);
-			int n_days_last_units = validators.valida_int("Enter the days with promo ", "Days with promo");
-			int n_sales_days = validators.valida_int("Enter the qty of sales days", "Sales days");
 			float price_promo = validators.valida_float("Enter the price promo", "Price promo");
-			String brand = special_prod.comboBrand();
+			String brand = special_prod.comboBrand("smartphone");
 			float price_total = 0.0f;
 
 			menu.S = new smartphone(stock, weight, price, ID, purchaseDate, deliveryDate, returnDate, iniPromoDate,
-					endPromoDate, n_days_last_units, n_sales_days, brand, price_total, price_promo);
+					endPromoDate, brand, price_total, price_promo);
 			menu.S.calculate_total_price();
 
 		} else if (i == 2) {
@@ -60,14 +57,12 @@ public class CRUD {
 			framework_oop_arrays.classes.date_object returnDate = product_data.ask_returnDate(deliveryDate);
 			framework_oop_arrays.classes.date_object iniPromoDate = product_data.ask_startDatePromo(purchaseDate);
 			framework_oop_arrays.classes.date_object endPromoDate = product_data.ask_endDatePromo(iniPromoDate);
-			float price_last_units = validators.valida_float("Enter the price", "price");
-			float price_sales = validators.valida_float("Enter the price", "price");
 			String type_of_product = validators.valida_string("Enter the type of product", "Type of product");
 			float price_promo = validators.valida_float("Enter the price promo", "Price promo");
 			float price_total = 0.0f;
 
 			menu.A = new accessory(stock, weight, price, ID, purchaseDate, deliveryDate, returnDate, iniPromoDate,
-					endPromoDate, price_last_units, price_sales, price_promo, type_of_product, price_total);
+					endPromoDate, price_promo, price_total, type_of_product);
 			menu.A.calculate_total_price();
 
 		}
@@ -112,16 +107,10 @@ public class CRUD {
 			case 6: // Return Date
 				cad = "The return date of the laptop is " + (menu.L).getreturnDate();
 				break;
-			case 7: // Start Promo Date
-				cad = "The start promotion date of the laptop is " + (menu.L).getiniPromoDate();
-				break;
-			case 8: // End Promo Date
+			case 7: // End Promo Date
 				cad = "The end promotion date of the laptop is " + (menu.L).getendPromoDate();
 				break;
-			case 9: // N Days with promo
-				cad = "There are " + (menu.L).getN_days_with_promo() + " days of promotion";
-				break;
-			case 10: // Price Promotion
+			case 8: // Price Promotion
 				cad = "The price with the promotion is  " + (menu.L).getPrice_promo() + "€";
 				break;
 			}// end-switch
@@ -154,18 +143,12 @@ public class CRUD {
 				cad = "The return date of the smartphone is " + (menu.S).getreturnDate();
 				break;
 			case 7: // Start Promo Date
-				cad = "The start promotion date of the smartphone is " + (menu.S).getiniPromoDate();
+				cad = "The start promotion date of the smartphone is " + (menu.S).getstartPromoDate();
 				break;
 			case 8: // End Promo Date
 				cad = "The end promotion date of the smartphone is " + (menu.S).getendPromoDate();
 				break;
-			case 9: // Number days last units
-				cad = "There are " + (menu.S).getN_days_last_units() + " days of last units for smartphone ";
-				break;
-			case 10: // Number of sales days
-				cad = "There are  " + (menu.S).getN_sales_days() + " days of sales for smartphone";
-				break;
-			case 11: // Brand
+			case 9: // Brand
 				cad = "The brand of the smartphone is  " + (menu.S).getBrand();
 				break;
 			}// end-switch
@@ -197,18 +180,12 @@ public class CRUD {
 				cad = "The return date of the accessory is " + (menu.A).getreturnDate();
 				break;
 			case 7: // Start Promo Date
-				cad = "The start promotion date of the accessory is " + (menu.A).getiniPromoDate();
+				cad = "The start promotion date of the accessory is " + (menu.A).getstartPromoDate();
 				break;
 			case 8: // End Promo Date
 				cad = "The end promotion date of the accessory is " + (menu.A).getendPromoDate();
 				break;
-			case 9: // Price last units
-				cad = "The price of the last units is " + (menu.A).getPrice_last_units() + "€";
-				break;
-			case 10: // Price of sales
-				cad = "The price of sales is  " + (menu.A).getPrice_sales() + "€";
-				break;
-			case 11: // Type of product
+			case 9: // Type of product
 				cad = "The type of product is  " + (menu.A).getType_of_product();
 				break;
 			}// end-switch
@@ -265,20 +242,14 @@ public class CRUD {
 			case 7: // Start Promo Date
 				framework_oop_arrays.classes.date_object date_ini_prom = product_data
 						.ask_startDatePromo((menu.L).getpurchaseDate());
-				(menu.L).setiniPromoDate(date_ini_prom);
+				(menu.L).setstartPromoDate(date_ini_prom);
 				break;
 			case 8: // End Promo Date
 				framework_oop_arrays.classes.date_object date_end_prom = product_data
-						.ask_endDatePromo((menu.L).getiniPromoDate());
+						.ask_endDatePromo((menu.L).getstartPromoDate());
 				(menu.L).setendPromoDate(date_end_prom);
 				break;
-			case 9: // N Days with promo
-				int newN_days_with_promo = validators.valida_int("Enter a new days with promotion",
-						"Days with promotion");
-				(menu.L).setN_days_with_promo(newN_days_with_promo);
-				cad = "New days with promotion updated to " + newN_days_with_promo;
-				break;
-			case 10: // Price Promotion
+			case 9: // Price Promotion
 				float newPrice_Promotion = validators.valida_float("Enter new price to promotion", "Price Promotion");
 				(menu.L).setPrice_promo(newPrice_Promotion);
 				cad = "Price to promotion updated to " + newPrice_Promotion;
@@ -330,11 +301,11 @@ public class CRUD {
 			case 7: // Start Promo Date
 				framework_oop_arrays.classes.date_object datePurchase_prom = product_data
 						.ask_startDatePromo((menu.S).getpurchaseDate());
-				(menu.S).setiniPromoDate(datePurchase_prom);
+				(menu.S).setstartPromoDate(datePurchase_prom);
 				break;
 			case 8: // End Promo Date
 				framework_oop_arrays.classes.date_object date_end_prom = product_data
-						.ask_endDatePromo((menu.S).getiniPromoDate());
+						.ask_endDatePromo((menu.S).getstartPromoDate());
 				(menu.S).setendPromoDate(date_end_prom);
 				break;
 			case 9: // Number days last units
@@ -342,12 +313,7 @@ public class CRUD {
 				(menu.S).setStock(newN_days_last_units);
 				cad = "Days with last units updated to " + newN_days_last_units;
 				break;
-			case 10: // Number of sales days
-				int newSalesDays = validators.valida_int("Enter new sales days", "Sales Days");
-				(menu.S).setN_sales_days(newSalesDays);
-				cad = "Sales Days updated to " + newSalesDays;
-				break;
-			case 11: // Brand
+			case 10: // Brand
 				String newBrand = validators.valida_string("Enter a new brand ", "Brand");
 				(menu.S).setBrand(newBrand);
 				cad = "Brand updated to " + newBrand;
@@ -400,25 +366,19 @@ public class CRUD {
 			case 7: // Start Promo Date
 				framework_oop_arrays.classes.date_object datePurchase_prom = product_data
 						.ask_startDatePromo((menu.A).getpurchaseDate());
-				(menu.A).setiniPromoDate(datePurchase_prom);
+				(menu.A).setstartPromoDate(datePurchase_prom);
 				break;
 			case 8: // End Promo Date
 				framework_oop_arrays.classes.date_object date_end_prom = product_data
-						.ask_endDatePromo((menu.A).getiniPromoDate());
+						.ask_endDatePromo((menu.A).getstartPromoDate());
 				(menu.A).setendPromoDate(date_end_prom);
 				break;
-			case 10: // Price last units
-				float newPrice_last_units = validators.valida_float("Enter a new price of last units",
-						"Price last units");
-				(menu.A).setPrice_last_units(newPrice_last_units);
-				cad = "Price last units updated to " + newPrice_last_units + "€";
-				break;
-			case 11: // Price of sales
+			case 9: // Price of sales
 				float newPriceSales = validators.valida_float("Enter a new price of sales", "Price sales");
 				(menu.A).setWeight(newPriceSales);
 				cad = "Price of sales updated to " + newPriceSales + "€";
 				break;
-			case 12: // Type of Product
+			case 10: // Type of Product
 				String newTypeOfProduct = validators.valida_string("Enter a new type of product", "Type of product");
 				(menu.A).setType_of_product(newTypeOfProduct);
 				cad = "Type of Product updated to " + newTypeOfProduct;

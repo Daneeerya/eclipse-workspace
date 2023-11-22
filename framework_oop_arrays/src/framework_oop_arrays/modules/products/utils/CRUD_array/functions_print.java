@@ -10,7 +10,7 @@ import framework_oop_arrays.modules.products.utils.CRUD_arrays;
 import framework_oop_arrays.modules.products.utils.functions_find;
 
 public class functions_print {
-	public static void read_laptop(laptop l1) {
+	public static void print_laptop(laptop l1) {
 		int location = -1;
 		if (Singleton.productlaptop.isEmpty()) {
 			JOptionPane.showMessageDialog(null, "You must create the laptop first!", "Errorempty",
@@ -30,13 +30,44 @@ public class functions_print {
 		}
 	}
 
-	public static void read_smartphone(smartphone S1) {
-		// TODO Auto-generated method stub
+	public static void print_smartphone(smartphone S1) {
+		int location = -1;
+		if (Singleton.productsmartphone.isEmpty()) {
+			JOptionPane.showMessageDialog(null, "You must create the smartphone first!", "Errorempty",
+					JOptionPane.ERROR_MESSAGE);
+		} else {
+			location = -1;
+			S1 = CRUD_arrays.ask_smartphoneID();
+			location = functions_find.find_smartphone(S1);
+			if (location != -1) {
+				S1 = Singleton.productsmartphone.get(location);
+				JOptionPane.showMessageDialog(null, S1.toString());
+			} else {
+				JOptionPane.showMessageDialog(null, "You must create the smartphone first!", "Errorempty",
+						JOptionPane.ERROR_MESSAGE);
 
+			}
+		}
 	}
 
-	public static void read_accessory(accessory A1) {
-		// TODO Auto-generated method stub
+	public static void print_accessory(accessory A1) {
+		int location = -1;
+		if (Singleton.productaccessory.isEmpty()) {
+			JOptionPane.showMessageDialog(null, "You must create the accessory first!", "Errorempty",
+					JOptionPane.ERROR_MESSAGE);
+		} else {
+			location = -1;
+			A1 = CRUD_arrays.ask_accessoryID();
+			location = functions_find.find_accessory(A1);
+			if (location != -1) {
+				A1 = Singleton.productaccessory.get(location);
+				JOptionPane.showMessageDialog(null, A1.toString());
+			} else {
+				JOptionPane.showMessageDialog(null, "You must create the accessory first!", "Errorempty",
+						JOptionPane.ERROR_MESSAGE);
+
+			}
+		}
 
 	}
 }

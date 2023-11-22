@@ -22,6 +22,7 @@ public class functions_create {
 			Singleton.productlaptop.add(l1);
 			cad = "Laptop create correctly";
 		}
+		JOptionPane.showMessageDialog(null, cad, "Error", JOptionPane.ERROR_MESSAGE);
 	}
 
 	public static void create_smartphone(smartphone S1) {
@@ -34,7 +35,7 @@ public class functions_create {
 		} else {
 			S1 = CRUD_arrays.ask_smartphone();
 			Singleton.productsmartphone.add(S1);
-			cad = "Laptop create correctly";
+			cad = "Smartphone create correctly";
 		}
 	}
 
@@ -48,10 +49,8 @@ public class functions_create {
 		} else {
 			A1 = CRUD_arrays.ask_accessory();
 			Singleton.productaccessory.add(A1);
-			cad = "Laptop create correctly";
+			cad = "Accessory create correctly";
 		}
 		JOptionPane.showMessageDialog(null, cad, "Informative", JOptionPane.INFORMATION_MESSAGE);
-
 	}
-
 }

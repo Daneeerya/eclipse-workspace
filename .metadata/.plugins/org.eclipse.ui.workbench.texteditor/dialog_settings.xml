@@ -6,40 +6,40 @@
 		<item key="wholeword" value="false"/>
 		<item key="incremental" value="false"/>
 		<item key="isRegEx" value="false"/>
-		<item key="selection" value="productlaptop"/>
+		<item key="selection" value="seted"/>
 		<list key="findhistory">
-			<item value="productlaptop"/>
-			<item value="menu.l"/>
-			<item value="upd"/>
-			<item value="ID_prod"/>
-			<item value="date_object"/>
-			<item value="String"/>
-			<item value="float"/>
-			<item value="int"/>
-			<item value="sys"/>
-			<item value="syst"/>
-			<item value="sya"/>
-			<item value="sus"/>
-			<item value="user"/>
-			<item value="acceAAory"/>
-			<item value="S"/>
+			<item value="updated"/>
+			<item value="update"/>
+			<item value="smartphone"/>
+			<item value="S1"/>
+			<item value="laptop"/>
+			<item value="l1"/>
+			<item value="find"/>
+			<item value="funct"/>
+			<item value="UPDATE"/>
+			<item value="type"/>
+			<item value="Screen"/>
+			<item value="Apple"/>
+			<item value="Mouse"/>
+			<item value="brand"/>
+			<item value=".ask_purchaseDate();"/>
 		</list>
 		<list key="replacehistory">
+			<item value="is"/>
+			<item value="seted"/>
+			<item value="accessory"/>
+			<item value="A1"/>
+			<item value="smartphone"/>
+			<item value="S1"/>
+			<item value="Mouse"/>
+			<item value="Headphone"/>
+			<item value=".ask_purchaseDate(&quot;laptop&quot;);"/>
+			<item value="startPromoDate"/>
 			<item value="ID"/>
 			<item value=""/>
 			<item value="stock"/>
-			<item value="accessory"/>
 			<item value="A"/>
-			<item value="A1"/>
-			<item value="S1"/>
-			<item value="smartphone"/>
 			<item value="laptop"/>
-			<item value="l1"/>
-			<item value="s1"/>
-			<item value="framework_oop_arrays"/>
-			<item value=", "/>
-			<item value=","/>
-			<item value="returnDate"/>
 		</list>
 	</section>
 	<section name="org.eclipse.ui.texteditor.FindReplaceDialog_dialogBounds">
