@@ -7,4 +7,7 @@ public class Singleton {
 	public static ArrayList<smartphone> productsmartphone = new ArrayList<>();
 	public static ArrayList<accessory> productaccessory = new ArrayList<>();
 	public static String ID;
+	public static product L;
+	public static product S;
+	public static product A;
 }

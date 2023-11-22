@@ -1,4 +1,4 @@
-package framework_oop_arrays.modules.products.utils.CRUD_array;
+package framework_oop_arrays.modules.products.utils.CRUD_simple;
 
 import javax.swing.JOptionPane;
 
@@ -20,7 +20,7 @@ public class functions_read {
 					JOptionPane.ERROR_MESSAGE);
 		} else {
 			l1 = CRUD_arrays.ask_laptopID();
-			location = functions_find.find_laptop(l1);
+			location = functions_find.find_product(l1);
 			if (location == -1) {
 				JOptionPane.showMessageDialog(null,
 						"You deleted this product before, now you can't recover it, create it again", "Error",
@@ -38,11 +38,11 @@ public class functions_read {
 		int attrs = 0;
 
 		if (Singleton.productsmartphone.isEmpty()) {
-			JOptionPane.showMessageDialog(null, "You must create the smartphone first!", "Errorempty",
+			JOptionPane.showMessageDialog(null, "You must create the smartphone first!", "Error read",
 					JOptionPane.ERROR_MESSAGE);
 		} else {
 			S1 = CRUD_arrays.ask_smartphoneID();
-			location = functions_find.find_smartphone(S1);
+			location = functions_find.find_product(S1);
 			if (location == -1) {
 				JOptionPane.showMessageDialog(null,
 						"You deleted this product before, now you can't recover it, create it again", "Error",
@@ -61,14 +61,14 @@ public class functions_read {
 		int attrs = 0;
 
 		if (Singleton.productaccessory.isEmpty()) {
-			JOptionPane.showMessageDialog(null, "You must create the accessory first!", "Errorempty",
+			JOptionPane.showMessageDialog(null, "You must create the accessory first!", "Error read",
 					JOptionPane.ERROR_MESSAGE);
 		} else {
 			A1 = CRUD_arrays.ask_accessoryID();
-			location = functions_find.find_accessory(A1);
+			location = functions_find.find_product(A1);
 			if (location == -1) {
 				JOptionPane.showMessageDialog(null,
-						"You deleted this product before, now you can't recover it, create it again", "Error",
+						"You deleted this product before, now you can't recover it, create it again", "Error read",
 						JOptionPane.ERROR_MESSAGE);
 			} else {
 				A1 = Singleton.productaccessory.get(location); // L'extrau del ArrayList

@@ -6,45 +6,45 @@
 		<item key="wholeword" value="false"/>
 		<item key="incremental" value="false"/>
 		<item key="isRegEx" value="false"/>
-		<item key="selection" value="seted"/>
+		<item key="selection" value="you"/>
 		<list key="findhistory">
-			<item value="updated"/>
-			<item value="update"/>
-			<item value="smartphone"/>
-			<item value="S1"/>
+			<item value="you must"/>
+			<item value="you"/>
 			<item value="laptop"/>
 			<item value="l1"/>
-			<item value="find"/>
-			<item value="funct"/>
-			<item value="UPDATE"/>
-			<item value="type"/>
-			<item value="Screen"/>
-			<item value="Apple"/>
-			<item value="Mouse"/>
-			<item value="brand"/>
-			<item value=".ask_purchaseDate();"/>
+			<item value="option_dum"/>
+			<item value="param"/>
+			<item value="CANN"/>
+			<item value="A1"/>
+			<item value="S1"/>
+			<item value="s"/>
+			<item value="smartphone"/>
+			<item value="CRUD_array"/>
+			<item value="option ="/>
+			<item value="option "/>
+			<item value="option"/>
 		</list>
 		<list key="replacehistory">
-			<item value="is"/>
-			<item value="seted"/>
-			<item value="accessory"/>
-			<item value="A1"/>
 			<item value="smartphone"/>
 			<item value="S1"/>
-			<item value="Mouse"/>
-			<item value="Headphone"/>
-			<item value=".ask_purchaseDate(&quot;laptop&quot;);"/>
-			<item value="startPromoDate"/>
-			<item value="ID"/>
-			<item value=""/>
-			<item value="stock"/>
-			<item value="A"/>
-			<item value="laptop"/>
+			<item value="product"/>
+			<item value="A1"/>
+			<item value="accessory"/>
+			<item value="CRUD_simple"/>
+			<item value="option_prod"/>
+			<item value="option_dum"/>
+			<item value="&quot;There is a stock of &quot;"/>
+			<item value="getstartPromoDate"/>
+			<item value=".setstartPromoDate"/>
+			<item value=".getstartPromoDate();"/>
+			<item value="int"/>
+			<item value="is"/>
+			<item value="seted"/>
 		</list>
 	</section>
 	<section name="org.eclipse.ui.texteditor.FindReplaceDialog_dialogBounds">
-		<item key="DIALOG_X_ORIGIN" value="521"/>
-		<item key="DIALOG_Y_ORIGIN" value="147"/>
+		<item key="DIALOG_X_ORIGIN" value="86"/>
+		<item key="DIALOG_Y_ORIGIN" value="199"/>
 		<item key="DIALOG_WIDTH" value="407"/>
 		<item key="DIALOG_HEIGHT" value="444"/>
 		<item key="DIALOG_FONT_NAME" value="1|Segoe UI|9.0|0|WINDOWS|1|-15|0|0|0|400|0|0|0|1|0|0|0|0|Segoe UI"/>

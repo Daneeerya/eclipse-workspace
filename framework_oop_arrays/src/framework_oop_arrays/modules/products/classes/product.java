@@ -139,8 +139,8 @@ public abstract class product {
 		this.price_total = price_total;
 	}
 
-	public boolean equals(Object param) {
-		return getID().equals(((product) param).getID());
+	public boolean equals(Object product) {
+		return getID().equals(((product) product).getID());
 	}
 
 // To string

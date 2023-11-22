@@ -1,4 +1,4 @@
-package framework_oop_arrays.modules.products.utils.CRUD_array;
+package framework_oop_arrays.modules.products.utils.CRUD_simple;
 
 import javax.swing.JOptionPane;
 
@@ -20,13 +20,14 @@ public class functions_update {
 			location = -1;
 			l1 = CRUD_arrays.ask_laptopID();
 			System.out.println("Ask ID" + l1);
-			location = functions_find.find_laptop(l1); // Busca el producte
+			location = functions_find.find_product(l1); // Busca el producte
 			System.out.println("Ask location" + location);
 
 			if (location != -1) {
 				l1 = Singleton.productlaptop.get(location); // L'extrau del ArrayList
 				CRUD_arrays.updateProduct(l1); // Actualitza el producte
 				Singleton.productlaptop.set(location, l1); // Actualitza el Singleton
+				location = -1;
 			} else {
 				JOptionPane.showMessageDialog(null,
 						"You deleted this product before, now you can't recover it, create it again", "Error",
@@ -44,7 +45,7 @@ public class functions_update {
 		} else {
 			location = -1;
 			S1 = CRUD_arrays.ask_smartphoneID();
-			location = functions_find.find_smartphone(S1); // Busca el producte
+			location = functions_find.find_product(S1); // Busca el producte
 			if (location != -1) {
 				S1 = Singleton.productsmartphone.get(location); // L'extrau del ArrayList
 				CRUD_arrays.updateProduct(S1); // Actualitza el producte
@@ -66,7 +67,7 @@ public class functions_update {
 		} else {
 			location = -1;
 			A1 = CRUD_arrays.ask_accessoryID();
-			location = functions_find.find_accessory(A1); // Busca el producte
+			location = functions_find.find_product(A1); // Busca el producte
 			if (location != -1) {
 				A1 = Singleton.productaccessory.get(location); // L'extrau del ArrayList
 				CRUD_arrays.updateProduct(A1); // Actualitza el producte

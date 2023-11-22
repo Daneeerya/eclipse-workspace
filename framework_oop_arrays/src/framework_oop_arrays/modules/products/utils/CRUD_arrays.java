@@ -93,129 +93,129 @@ public class CRUD_arrays {
 		return new accessory(Singleton.ID);
 	}
 
-	public static void readProduct(product param) {
+	public static void readProduct(product product) {
 		String cad = "";
 		int attrs = 0;
 		// Admin
-		if (param instanceof laptop) {
-			laptop l1 = (laptop) param;
+		if (product instanceof laptop) {
+			laptop l1 = (laptop) product;
 			String[] opt_attrs = { "Stock", "Weight", "Price", "ID", "Purchase Date", "Delivery Date", "Return Date",
 					"Start Promo Date", "End Promo Date", "Price Promotion" };
 			attrs = menus.menu(opt_attrs, "What attribute do you want to read?", "Attributes");
 
 			switch (attrs) {
 			case 0: // Stock
-				cad = "Stock is " + l1.getStock();
+				cad = "There is a stock of " + l1.getStock() + " units of laptops";
 				break;
 			case 1: // Weight
-				cad = "Weight updated to " + l1.getWeight();
+				cad = "The weight of the laptop is " + l1.getWeight() + " kg";
 				break;
 			case 2: // Price
-				cad = "Price updated to " + l1.getPrice();
+				cad = "The price of the laptop is " + l1.getPrice() + "€";
 				break;
 			case 3: // ID
-				cad = "Price updated to " + l1.getID();
+				cad = "The ID of the laptop is " + l1.getID();
 				break;
 			case 4: // Purchase Date
-				cad = "Purchase Date updated to " + l1.getpurchaseDate();
+				cad = "The purchase date of the laptop is " + l1.getpurchaseDate();
 				break;
 			case 5: // Delivery Date
-				cad = "Delivery Date updated to " + l1.getdeliveryDate();
+				cad = "The delivery date of the laptop is " + l1.getdeliveryDate();
 				break;
 			case 6: // Return Date
-				cad = "Return Date updated to " + l1.getreturnDate();
+				cad = "The return date of the laptop is " + l1.getreturnDate();
 				break;
 			case 7: // Start Promo Date
-				cad = "Start Promo Date updated to " + l1.getstartPromoDate();
+				cad = "The Start Promo date of the laptop is " + l1.getstartPromoDate();
 				break;
 			case 8: // End Promo Date
-				cad = "End Promo Date updated to " + l1.getendPromoDate();
+				cad = "The End Promo date of the laptop is " + l1.getendPromoDate();
 				break;
 			case 9: // Price Promotion
-				cad = "Price Promotion updated to " + l1.getPrice_promo();
+				cad = "The price with the promotion is " + l1.getPrice_promo() + "€";
 				break;
 			}
-		} else if (param instanceof smartphone) {
-			smartphone S1 = (smartphone) param;
+		} else if (product instanceof smartphone) {
+			smartphone S1 = (smartphone) product;
 			String[] opt_attrs = { "Stock", "Weight", "Price", "ID product", "Purchase Date", "Delivery Date",
 					"Return Date", "Start Promo Date", "End Promo Date", "Price Promo", "Brand" };
 			attrs = menus.menu(opt_attrs, "What attribute do you want to set?", "Attributes");
 
 			switch (attrs) {
 			case 0: // Stock
-				cad = "Stock updated to " + S1.getStock();
+				cad = "There is a stock of " + S1.getStock() + " units of smartphone";
 				break;
 			case 1: // Weight
-				cad = "Weight updated to " + S1.getWeight();
+				cad = "The weight of the smartphone is " + S1.getWeight() + "kg";
 				break;
 			case 2: // Price
-				cad = "Price updated to " + S1.getPrice();
+				cad = "The price of the smartphone is " + S1.getPrice() + "€";
 				break;
 			case 3: // ID
-				cad = "Price updated to " + S1.getID();
+				cad = "The ID of the smartphone is " + S1.getID();
 				break;
 			case 4: // Purchase Date
-				cad = "Purchase Date updated to " + S1.getpurchaseDate();
+				cad = "The purchase date of the smartphone is " + S1.getpurchaseDate();
 				break;
 			case 5: // Delivery Date
-				cad = "Delivery Date updated to " + S1.getdeliveryDate();
+				cad = "The delivery date of the smartphone is " + S1.getdeliveryDate();
 				break;
 			case 6: // Return Date
-				cad = "Return Date updated to " + S1.getreturnDate();
+				cad = "The return date of the smartphone is " + S1.getreturnDate();
 				break;
 			case 7: // Start Promo Date
-				cad = "Start Promo Date updated to " + S1.getstartPromoDate();
+				cad = "The start promo date of the smartphone is " + S1.getstartPromoDate();
 				break;
 			case 8: // End Promo Date
-				cad = "End Promo Date updated to " + S1.getendPromoDate();
+				cad = "The end promo date of the smartphone is " + S1.getendPromoDate();
 				break;
 			case 9: // Price Promotion
-				cad = "Price Promotion updated to " + S1.getPrice_promo();
+				cad = "The price with the promotion is " + S1.getPrice_promo() + "€";
 				break;
 			case 10: // Brand
-				cad = "Brand Promotion updated to " + S1.getBrand();
+				cad = "The brand of the smartphone is " + S1.getBrand();
 				break;
 			}// end-switch
 
-		} else if (param instanceof accessory) {
-			accessory A1 = (accessory) param;
+		} else if (product instanceof accessory) {
+			accessory A1 = (accessory) product;
 			String[] opt_attrs = { "Stock", "Weight", "Price", "ID product", "Purchase Date", "Delivery Date",
 					"Return Date", "Start Promo Date", "End Promo Date", "Type of product" };
 			attrs = menus.menu(opt_attrs, "What attribute do you want to set?", "Attributes");
 
 			switch (attrs) {
 			case 0: // Stock
-				cad = "Stock updated to " + A1.getStock();
+				cad = "There is a stock of " + A1.getStock() + " units of accessorys";
 				break;
 			case 1: // Weight
-				cad = "Weight updated to " + A1.getWeight();
+				cad = "The weight of the accessory is " + A1.getWeight() + "kg";
 				break;
 			case 2: // Price
-				cad = "Price updated to " + A1.getPrice();
+				cad = "The price of the accessory is " + A1.getPrice() + "€";
 				break;
 			case 3: // ID
-				cad = "Price updated to " + A1.getID();
+				cad = "The ID of the accessory is " + A1.getID();
 				break;
 			case 4: // Purchase Date
-				cad = "Purchase Date updated to " + A1.getpurchaseDate();
+				cad = "The purchase date of the accessory is " + A1.getpurchaseDate();
 				break;
 			case 5: // Delivery Date
-				cad = "Delivery Date updated to " + A1.getdeliveryDate();
+				cad = "The delivery date of the accessory is " + A1.getdeliveryDate();
 				break;
 			case 6: // Return Date
-				cad = "Return Date updated to " + A1.getreturnDate();
+				cad = "The return date of the accessory is " + A1.getreturnDate();
 				break;
 			case 7: // Start Promo Date
-				cad = "Start Promo Date updated to " + A1.getstartPromoDate();
+				cad = "The start promo date of the accessory is " + A1.getstartPromoDate();
 				break;
 			case 8: // End Promo Date
-				cad = "End Promo Date updated to " + A1.getendPromoDate();
+				cad = "The end promo date of the accessory is " + A1.getendPromoDate();
 				break;
 			case 9: // Price Promotion
-				cad = "Price Promotion updated to " + A1.getPrice_promo();
+				cad = "The price with the promotion is " + A1.getPrice_promo() + "€";
 				break;
 			case 10: // Type of product
-				cad = "Type of product updated to " + A1.getType_of_product();
+				cad = "The type of accessory is " + A1.getType_of_product();
 				break;
 			}
 
@@ -225,12 +225,12 @@ public class CRUD_arrays {
 	}
 
 // UPDATE
-	public static void updateProduct(product param) {
+	public static void updateProduct(product product) {
 		String cad = "";
 		int attrs = 0;
 		// Admin
-		if (param instanceof laptop) {
-			laptop l1 = (laptop) param;
+		if (product instanceof laptop) {
+			laptop l1 = (laptop) product;
 			String[] opt_attrs = { "Stock", "Weight", "Price", "ID", "Purchase Date", "Delivery Date", "Return Date",
 					"Start Promo Date", "End Promo Date", "Price Promotion" };
 			attrs = menus.menu(opt_attrs, "What attribute do you want to set?", "Attributes");
@@ -249,7 +249,7 @@ public class CRUD_arrays {
 				cad = "Price updated to " + l1.getPrice();
 				break;
 			case 3: // ID
-				functions_find.find_laptop(l1);
+				functions_find.find_product(product);
 
 				l1.setID(product_data.ask_ID("laptop"));
 
@@ -281,8 +281,8 @@ public class CRUD_arrays {
 				break;
 			}
 
-		} else if (param instanceof smartphone) {
-			smartphone S1 = (smartphone) param;
+		} else if (product instanceof smartphone) {
+			smartphone S1 = (smartphone) product;
 			String[] opt_attrs = { "Stock", "Weight", "Price", "ID product", "Purchase Date", "Delivery Date",
 					"Return Date", "Start Promo Date", "End Promo Date", "Price Promo", "Brand" };
 			attrs = menus.menu(opt_attrs, "What attribute do you want to set?", "Attributes");
@@ -334,8 +334,8 @@ public class CRUD_arrays {
 				break;
 			}// end-switch
 
-		} else if (param instanceof accessory) {
-			accessory A1 = (accessory) param;
+		} else if (product instanceof accessory) {
+			accessory A1 = (accessory) product;
 			String[] opt_attrs = { "Stock", "Weight", "Price", "ID product", "Purchase Date", "Delivery Date",
 					"Return Date", "Start Promo Date", "End Promo Date", "Type of product" };
 			;
@@ -394,36 +394,36 @@ public class CRUD_arrays {
 		JOptionPane.showMessageDialog(null, cad);
 	}
 
-	public static void set_laptopID(laptop l1, product param) {
+	public static void set_laptopID(laptop l1, product laptop) {
 		int location = -1;
 		l1 = CRUD_arrays.ask_laptopID();
-		location = functions_find.find_laptop(l1);
+		location = functions_find.find_product(laptop);
 		if (location != -1) {
 			JOptionPane.showMessageDialog(null, "The laptop is not created", "Error", location);
 		} else {
-			param.setID(Singleton.ID);
+			laptop.setID(Singleton.ID);
 		}
 	}
 
-	public static void set_smartphoneID(smartphone A1, product param) {
+	public static void set_smartphoneID(smartphone A1, product smartphone) {
 		int location = -1;
 		A1 = CRUD_arrays.ask_smartphoneID();
-		location = functions_find.find_smartphone(A1);
+		location = functions_find.find_product(smartphone);
 		if (location != -1) {
 			JOptionPane.showMessageDialog(null, "The smartphone is not created", "Error", location);
 		} else {
-			param.setID(Singleton.ID);
+			smartphone.setID(Singleton.ID);
 		}
 	}
 
-	public static void set_accessoryID(accessory A1, product param) {
+	public static void set_accessoryID(accessory A1, product product) {
 		int location = -1;
 		A1 = CRUD_arrays.ask_accessoryID();
-		location = functions_find.find_accessory(A1);
+		location = functions_find.find_product(product);
 		if (location != -1) {
 			JOptionPane.showMessageDialog(null, "The accessory is not created", "Error", location);
 		} else {
-			param.setID(Singleton.ID);
+			product.setID(Singleton.ID);
 		}
 	}
 }

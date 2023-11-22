@@ -9,22 +9,22 @@ import framework_oop_arrays.utils.validators;
 
 public class product_data {
 	public static int ask_stock(String product) {
-		int stock = validators.valida_int("Enter the stock of the" + product, "Stock");
+		int stock = validators.valida_int("Enter the stock of the " + product, "Stock");
 		return stock;
 	}
 
 	public static float ask_weight(String product) {
-		float weight = validators.valida_float("Enter the weight of the" + product, "Weight");
+		float weight = validators.valida_float("Enter the weight of the " + product, "Weight");
 		return weight;
 	}
 
 	public static float ask_price(String product) {
-		float price = validators.valida_float("Enter the price of the" + product, "Price");
+		float price = validators.valida_float("Enter the price of the " + product, "Price");
 		return price;
 	}
 
 	public static String ask_ID(String product) {
-		String ID = insert_data.insert_id("Enter the ID of the" + product, "ID");
+		String ID = insert_data.insert_id("Enter the ID of the " + product, "ID");
 		return ID;
 	}
 
