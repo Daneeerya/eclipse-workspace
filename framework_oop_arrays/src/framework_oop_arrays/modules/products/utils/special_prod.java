@@ -1,5 +1,7 @@
 package framework_oop_arrays.modules.products.utils;
 
+import javax.swing.JOptionPane;
+
 import framework_oop_arrays.utils.menus;
 
 public class special_prod {
@@ -35,4 +37,36 @@ public class special_prod {
 		}
 		return accessory;
 	}
+
+//	public static String ComboIDs() {
+//		String[] tipo = (String[]) functions_find.find_id().toArray();
+//		String field = menus.menucombo(tipo, " What ID do you want ?", "ID");
+//
+//		return field;
+//	}
+
+	// -------------------------------------MENU-------------------------------------
+	// Menu using combobox-------------------------------------
+	public static String menucombo(String[] options, String message, String title) {
+		Object option = null;
+
+		option = JOptionPane.showInputDialog(null, message, title, JOptionPane.QUESTION_MESSAGE, null, options,
+				options[0]);
+
+		return option.toString();
+	}
+
+	public static String ComboIDs() {
+		Object[] products = functions_find.find_id().toArray();
+		String[] tipo = new String[products.length];
+
+		for (int i = 0; i < products.length; i++) {
+			tipo[i] = String.valueOf(products[i]);
+		}
+
+		String field = menus.menucombo(tipo, " What ID do you want ?", "ID");
+
+		return field;
+	}
+
 }

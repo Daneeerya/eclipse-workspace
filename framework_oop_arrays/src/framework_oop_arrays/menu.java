@@ -43,7 +43,7 @@ public class menu {
 						break;
 					// Update laptop
 					case 2:
-						functions_update.update_laptop(L);
+						functions_update.update_laptop();
 						break;
 					// Delete laptop
 					case 3:

@@ -1,5 +1,8 @@
 package framework_oop_arrays.utils;
 
+import java.util.ArrayList;
+import java.util.List;
+
 import javax.swing.JOptionPane;
 
 public class menus {
@@ -45,13 +48,21 @@ public class menus {
 		return operation;
 	}
 
-	// -------------------------------------MENU-------------------------------------
-	// Menu using combobox-------------------------------------
 	public static String menucombo(String[] options, String message, String title) {
-		Object option = null;
+		// Creamos el ArrayList para manejar dinámicamente las opciones
+		ArrayList<String> optionList = new ArrayList<>(List.of(options));
 
-		option = JOptionPane.showInputDialog(null, message, title, JOptionPane.QUESTION_MESSAGE, null, options,
-				options[0]);
+		// Agregamos "Salir" como predeterminada
+		optionList.add("Exit");
+
+		Object[] optionsWithExit = optionList.toArray();
+
+		Object option = JOptionPane.showInputDialog(null, message, title, JOptionPane.QUESTION_MESSAGE, null,
+				optionsWithExit, optionsWithExit[0]);
+
+		if (option == null || option.equals("Exit")) { // Si el usuario pulsa Salir o cierra la ventana
+			System.exit(0);
+		}
 
 		return option.toString();
 	}

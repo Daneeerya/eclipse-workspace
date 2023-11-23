@@ -6,12 +6,12 @@
 		<item key="wholeword" value="false"/>
 		<item key="incremental" value="false"/>
 		<item key="isRegEx" value="false"/>
-		<item key="selection" value="you"/>
+		<item key="selection" value="smartphone"/>
 		<list key="findhistory">
-			<item value="you must"/>
-			<item value="you"/>
 			<item value="laptop"/>
 			<item value="l1"/>
+			<item value="you must"/>
+			<item value="you"/>
 			<item value="option_dum"/>
 			<item value="param"/>
 			<item value="CANN"/>

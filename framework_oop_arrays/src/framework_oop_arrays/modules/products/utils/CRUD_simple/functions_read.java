@@ -8,6 +8,7 @@ import framework_oop_arrays.modules.products.classes.laptop;
 import framework_oop_arrays.modules.products.classes.smartphone;
 import framework_oop_arrays.modules.products.utils.CRUD_arrays;
 import framework_oop_arrays.modules.products.utils.functions_find;
+import framework_oop_arrays.modules.products.utils.special_prod;
 
 public class functions_read {
 	public static void read_laptop(laptop l1) {
@@ -19,7 +20,8 @@ public class functions_read {
 			JOptionPane.showMessageDialog(null, "You must create the laptop first!", "Errorempty",
 					JOptionPane.ERROR_MESSAGE);
 		} else {
-			l1 = CRUD_arrays.ask_laptopID();
+			l1 = new laptop(special_prod.ComboIDs());
+//			l1 = CRUD_arrays.ask_laptopID();
 			location = functions_find.find_product(l1);
 			if (location == -1) {
 				JOptionPane.showMessageDialog(null,

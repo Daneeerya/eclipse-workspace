@@ -249,11 +249,14 @@ public class CRUD_arrays {
 				cad = "Price updated to " + l1.getPrice();
 				break;
 			case 3: // ID
-				functions_find.find_product(product);
-
-				l1.setID(product_data.ask_ID("laptop"));
-
-				cad = "ID updated to " + l1.getID();
+				String ID = product_data.ask_ID("laptop");
+				int location = functions_find.find_product(l1);
+				if (location == -1) {
+					l1.setID(ID);
+					cad = "ID updated to " + l1.getID();
+				} else {
+					cad = "Este ID ya existe";
+				}
 				break;
 			case 4: // Purchase Date
 				l1.setpurchaseDate(product_data.ask_purchaseDate());
@@ -301,8 +304,14 @@ public class CRUD_arrays {
 				cad = "Price updated to " + S1.getPrice();
 				break;
 			case 3: // ID
-				S1.setID(product_data.ask_ID("laptop"));
-				cad = "ID updated to " + S1.getID();
+				String ID = product_data.ask_ID("smartphone");
+				int location = functions_find.find_product(S1);
+				if (location == -1) {
+					S1.setID(ID);
+					cad = "ID updated to " + S1.getID();
+				} else {
+					cad = "Este ID ya existe";
+				}
 				break;
 			case 4: // Purchase Date
 				S1.setpurchaseDate(product_data.ask_purchaseDate());

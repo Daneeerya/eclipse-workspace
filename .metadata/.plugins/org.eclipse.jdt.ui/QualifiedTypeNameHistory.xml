@@ -1,6 +1,5 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
 <qualifiedTypeNameHistroy>
-    <fullyQualifiedTypeName name="modules_oop2.menu"/>
     <fullyQualifiedTypeName name="framework_oop_prods.laptop"/>
     <fullyQualifiedTypeName name="framework_oop_prods.menus"/>
     <fullyQualifiedTypeName name="menu_oop_cast.classes.date_object"/>
@@ -42,9 +41,7 @@
     <fullyQualifiedTypeName name="framework_oop_arrays.modules.products.dummies.functions_find_dummies"/>
     <fullyQualifiedTypeName name="framework_oop_arrays.utils.regex"/>
     <fullyQualifiedTypeName name="framework_oop_arrays.utils.insert_data"/>
-    <fullyQualifiedTypeName name="java.util.ArrayList"/>
     <fullyQualifiedTypeName name="java.lang.System"/>
-    <fullyQualifiedTypeName name="framework_oop_arrays.modules.products.classes.laptop"/>
     <fullyQualifiedTypeName name="framework_oop_arrays.modules.products.utils.CRUD_array.functions_delete"/>
     <fullyQualifiedTypeName name="framework_oop_arrays.utils.validators"/>
     <fullyQualifiedTypeName name="javax.swing.JOptionPane"/>
@@ -60,4 +57,7 @@
     <fullyQualifiedTypeName name="framework_oop_arrays.modules.products.utils.CRUD_simple.functions_delete"/>
     <fullyQualifiedTypeName name="framework_oop_arrays.modules.products.utils.CRUD_simple.functions_create"/>
     <fullyQualifiedTypeName name="framework_oop_arrays.modules.products.utils.CRUD_arrays"/>
+    <fullyQualifiedTypeName name="java.util.ArrayList"/>
+    <fullyQualifiedTypeName name="framework_oop_arrays.modules.products.utils.special_prod"/>
+    <fullyQualifiedTypeName name="framework_oop_arrays.modules.products.classes.laptop"/>
 </qualifiedTypeNameHistroy>
