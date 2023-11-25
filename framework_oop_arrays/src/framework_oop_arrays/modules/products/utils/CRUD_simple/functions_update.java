@@ -13,30 +13,21 @@ import framework_oop_arrays.modules.products.utils.special_prod;
 public class functions_update {
 	public static void update_laptop() {
 		int location = -1;
-
+		String cad = "";
 		if (Singleton.productlaptop.isEmpty()) {
-			JOptionPane.showMessageDialog(null, "You must create the laptop first!", "Error",
-					JOptionPane.ERROR_MESSAGE);
+			cad = "You must create the accessory first!";
 		} else {
-			String selectedID = special_prod.ComboIDs(); // Obtener el ID como String
-			System.out.println("Ask ID" + selectedID);
-
-			// Crear una instancia de laptop con el ID seleccionado
-			laptop l1 = new laptop(selectedID);
-
+			String IDs = special_prod.ComboIDs(); // Obtener el ID como String
+			laptop l1 = new laptop(IDs);
 			location = functions_find.find_product(l1); // Buscar el producto por la instancia de laptop
-
-			System.out.println("Ask location" + location);
-
 			if (location != -1) {
 				laptop updatedLaptop = Singleton.productlaptop.get(location); // Extraer del ArrayList
 				CRUD_arrays.updateProduct(updatedLaptop); // Actualizar el producto
 				Singleton.productlaptop.set(location, updatedLaptop); // Actualizar el Singleton
 			} else {
-				JOptionPane.showMessageDialog(null,
-						"You deleted this product before, now you can't recover it, create it again", "Error",
-						JOptionPane.ERROR_MESSAGE);
+				cad = "You deleted this product before, now you can't recover it, create it again";
 			}
+			JOptionPane.showMessageDialog(null, cad, "Error", JOptionPane.ERROR_MESSAGE);
 		}
 	}
 
@@ -44,8 +35,7 @@ public class functions_update {
 		String cad = "";
 		int location = -1;
 		if (Singleton.productsmartphone.isEmpty()) {
-			JOptionPane.showMessageDialog(null, "You must create the smartphone first!", "Errorempty",
-					JOptionPane.ERROR_MESSAGE);
+			cad = "You must create the accessory first!";
 		} else {
 			location = -1;
 			S1 = CRUD_arrays.ask_smartphoneID();
@@ -55,10 +45,9 @@ public class functions_update {
 				CRUD_arrays.updateProduct(S1); // Actualitza el producte
 				Singleton.productsmartphone.set(location, S1); // Actualitza el Singleton
 			} else {
-				JOptionPane.showMessageDialog(null,
-						"You deleted this product before, now you can't recover it, create it again", "Error",
-						JOptionPane.ERROR_MESSAGE);
+				cad = "You deleted this product before, now you can't recover it, create it again";
 			}
+			JOptionPane.showMessageDialog(null, cad, "Error", JOptionPane.ERROR_MESSAGE);
 		}
 	}
 
@@ -66,8 +55,8 @@ public class functions_update {
 		String cad = "";
 		int location = -1;
 		if (Singleton.productaccessory.isEmpty()) {
-			JOptionPane.showMessageDialog(null, "You must create the accessory first!", "Errorempty",
-					JOptionPane.ERROR_MESSAGE);
+			cad = "You must create the accessory first!";
+
 		} else {
 			location = -1;
 			A1 = CRUD_arrays.ask_accessoryID();
@@ -77,10 +66,9 @@ public class functions_update {
 				CRUD_arrays.updateProduct(A1); // Actualitza el producte
 				Singleton.productaccessory.set(location, A1); // Actualitza el Singleton
 			} else {
-				JOptionPane.showMessageDialog(null,
-						"You deleted this product before, now you can't recover it, create it again", "Error",
-						JOptionPane.ERROR_MESSAGE);
+				cad = "You deleted this product before, now you can't recover it, create it again";
 			}
 		}
+		JOptionPane.showMessageDialog(null, cad, "Error", JOptionPane.ERROR_MESSAGE);
 	}
 }

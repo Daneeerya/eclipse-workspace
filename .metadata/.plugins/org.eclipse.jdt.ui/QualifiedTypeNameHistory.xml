@@ -1,8 +1,5 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
 <qualifiedTypeNameHistroy>
-    <fullyQualifiedTypeName name="framework_oop_prods.laptop"/>
-    <fullyQualifiedTypeName name="framework_oop_prods.menus"/>
-    <fullyQualifiedTypeName name="menu_oop_cast.classes.date_object"/>
     <fullyQualifiedTypeName name="menu_oop_cast.modules.products.classes.laptop"/>
     <fullyQualifiedTypeName name="menu_oop_cast.menu"/>
     <fullyQualifiedTypeName name="menu_oop_cast.modules.products.classes.smartphone"/>
@@ -48,16 +45,19 @@
     <fullyQualifiedTypeName name="framework_oop_arrays.modules.products.utils.CRUD_array.functions_read"/>
     <fullyQualifiedTypeName name="framework_oop_arrays.modules.products.classes.Singleton"/>
     <fullyQualifiedTypeName name="framework_oop_arrays.modules.products.utils.functions_find"/>
-    <fullyQualifiedTypeName name="framework_oop_arrays.classes.date_object"/>
-    <fullyQualifiedTypeName name="framework_oop_arrays.modules.products.utils.CRUD_dummies.functions_find_dummies"/>
-    <fullyQualifiedTypeName name="framework_oop_arrays.modules.products.classes.product"/>
     <fullyQualifiedTypeName name="framework_oop_arrays.utils.menus"/>
     <fullyQualifiedTypeName name="framework_oop_arrays.modules.products.utils.CRUD_simple.functions_read"/>
     <fullyQualifiedTypeName name="framework_oop_arrays.modules.products.utils.CRUD_simple.functions_update"/>
     <fullyQualifiedTypeName name="framework_oop_arrays.modules.products.utils.CRUD_simple.functions_delete"/>
     <fullyQualifiedTypeName name="framework_oop_arrays.modules.products.utils.CRUD_simple.functions_create"/>
     <fullyQualifiedTypeName name="framework_oop_arrays.modules.products.utils.CRUD_arrays"/>
-    <fullyQualifiedTypeName name="java.util.ArrayList"/>
     <fullyQualifiedTypeName name="framework_oop_arrays.modules.products.utils.special_prod"/>
+    <fullyQualifiedTypeName name="java.util.Random"/>
+    <fullyQualifiedTypeName name="framework_oop_arrays.classes.date_object"/>
+    <fullyQualifiedTypeName name="framework_oop_arrays.modules.products.classes.product"/>
+    <fullyQualifiedTypeName name="framework_oop_arrays.modules.products.utils.CRUD_dummies.CRUD.functions_create_dummies"/>
+    <fullyQualifiedTypeName name="framework_oop_arrays.modules.products.utils.CRUD_dummies.functions_find_dummies"/>
     <fullyQualifiedTypeName name="framework_oop_arrays.modules.products.classes.laptop"/>
+    <fullyQualifiedTypeName name="framework_oop_arrays.modules.products.utils.CRUD_dummies.CRUD_arrays_dummies"/>
+    <fullyQualifiedTypeName name="java.util.ArrayList"/>
 </qualifiedTypeNameHistroy>

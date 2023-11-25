@@ -6,25 +6,30 @@
 		<item key="wholeword" value="false"/>
 		<item key="incremental" value="false"/>
 		<item key="isRegEx" value="false"/>
-		<item key="selection" value="smartphone"/>
+		<item key="selection" value="Sy"/>
 		<list key="findhistory">
+			<item value="sy"/>
+			<item value="sys"/>
+			<item value="system"/>
+			<item value="3"/>
+			<item value="product"/>
+			<item value="Data"/>
+			<item value="[i]"/>
+			<item value="[]"/>
+			<item value="print"/>
+			<item value="purchaseDate"/>
+			<item value="default"/>
+			<item value="l"/>
 			<item value="laptop"/>
-			<item value="l1"/>
-			<item value="you must"/>
-			<item value="you"/>
-			<item value="option_dum"/>
-			<item value="param"/>
-			<item value="CANN"/>
-			<item value="A1"/>
-			<item value="S1"/>
-			<item value="s"/>
-			<item value="smartphone"/>
-			<item value="CRUD_array"/>
-			<item value="option ="/>
-			<item value="option "/>
-			<item value="option"/>
+			<item value="(12 / 12 / 2000)"/>
+			<item value="cad = &quot;You must create the product first!&quot;;"/>
 		</list>
 		<list key="replacehistory">
+			<item value="date_object"/>
+			<item value=""/>
+			<item value="laptop_dum"/>
+			<item value="new date_object(30, 8, 1989)"/>
+			<item value="JOptionPane.showMessageDialog(null, &quot;You must create the laptop first!&quot;, &quot;Errorempty&quot;,"/>
 			<item value="smartphone"/>
 			<item value="S1"/>
 			<item value="product"/>
@@ -35,11 +40,6 @@
 			<item value="option_dum"/>
 			<item value="&quot;There is a stock of &quot;"/>
 			<item value="getstartPromoDate"/>
-			<item value=".setstartPromoDate"/>
-			<item value=".getstartPromoDate();"/>
-			<item value="int"/>
-			<item value="is"/>
-			<item value="seted"/>
 		</list>
 	</section>
 	<section name="org.eclipse.ui.texteditor.FindReplaceDialog_dialogBounds">

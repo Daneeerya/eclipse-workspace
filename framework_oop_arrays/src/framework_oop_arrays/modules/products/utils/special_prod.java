@@ -38,13 +38,6 @@ public class special_prod {
 		return accessory;
 	}
 
-//	public static String ComboIDs() {
-//		String[] tipo = (String[]) functions_find.find_id().toArray();
-//		String field = menus.menucombo(tipo, " What ID do you want ?", "ID");
-//
-//		return field;
-//	}
-
 	// -------------------------------------MENU-------------------------------------
 	// Menu using combobox-------------------------------------
 	public static String menucombo(String[] options, String message, String title) {
@@ -58,13 +51,13 @@ public class special_prod {
 
 	public static String ComboIDs() {
 		Object[] products = functions_find.find_id().toArray();
-		String[] tipo = new String[products.length];
+		String[] type = new String[products.length];
 
 		for (int i = 0; i < products.length; i++) {
-			tipo[i] = String.valueOf(products[i]);
+			type[i] = String.valueOf(products[i]);
 		}
 
-		String field = menus.menucombo(tipo, " What ID do you want ?", "ID");
+		String field = menus.menucombo(type, " What ID do you want ?", "ID");
 
 		return field;
 	}

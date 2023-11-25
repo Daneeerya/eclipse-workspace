@@ -26,7 +26,13 @@ public class laptop extends product {
 		super(ID);
 	}
 
-//Getters 
+	public laptop(int[] stock, float weight, float price, String iD, date_object purchaseDate, date_object deliveryDate,
+			date_object returnDate, date_object iniPromoDate, date_object endPromoDate, float price_promo2,
+			float price_total) {
+		// TODO Auto-generated constructor stub
+	}
+
+	// Getters
 	public float getPrice_promo() {
 		return price_promo;
 	}

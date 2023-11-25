@@ -5,6 +5,8 @@ import javax.swing.JOptionPane;
 import framework_oop_arrays.modules.products.classes.accessory;
 import framework_oop_arrays.modules.products.classes.laptop;
 import framework_oop_arrays.modules.products.classes.smartphone;
+import framework_oop_arrays.modules.products.utils.CRUD_dummies.laptop_dum;
+import framework_oop_arrays.modules.products.utils.CRUD_dummies.CRUD.functions_create_dummies;
 import framework_oop_arrays.modules.products.utils.CRUD_simple.functions_create;
 import framework_oop_arrays.modules.products.utils.CRUD_simple.functions_delete;
 import framework_oop_arrays.modules.products.utils.CRUD_simple.functions_print;
@@ -14,6 +16,8 @@ import framework_oop_arrays.utils.menus;
 
 public class menu {
 	public static laptop L = null;
+	public static laptop_dum L_dum = null;
+
 	public static smartphone S = null;
 	public static accessory A = null;
 
@@ -35,7 +39,8 @@ public class menu {
 					switch (option_CRUD) { // CRUD menu
 					// Create Laptop
 					case 0:
-						functions_create.create_laptop(L);
+//						functions_create.create_laptop(L);
+						functions_create_dummies.create_laptop(L_dum);
 						break;
 					// Read laptop
 					case 1:
@@ -119,11 +124,11 @@ public class menu {
 				JOptionPane.showMessageDialog(null, "Thanks for use the aplication");
 				break;
 			default:
-				option_CRUD = 3;
+				option_prod = 3;
 				break;
 			}
 
-		} while (option_CRUD != 3);
+		} while (option_prod != 3);
 //		break;
 
 //			case 1:

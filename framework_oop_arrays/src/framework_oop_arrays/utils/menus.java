@@ -51,16 +51,13 @@ public class menus {
 	public static String menucombo(String[] options, String message, String title) {
 		// Creamos el ArrayList para manejar dinámicamente las opciones
 		ArrayList<String> optionList = new ArrayList<>(List.of(options));
-
-		// Agregamos "Salir" como predeterminada
+		// We add "Exit" like default
 		optionList.add("Exit");
-
 		Object[] optionsWithExit = optionList.toArray();
-
 		Object option = JOptionPane.showInputDialog(null, message, title, JOptionPane.QUESTION_MESSAGE, null,
 				optionsWithExit, optionsWithExit[0]);
 
-		if (option == null || option.equals("Exit")) { // Si el usuario pulsa Salir o cierra la ventana
+		if (option == null || option == ("Exit")) { // Si el usuario pulsa Salir o cierra la ventana
 			System.exit(0);
 		}
 
