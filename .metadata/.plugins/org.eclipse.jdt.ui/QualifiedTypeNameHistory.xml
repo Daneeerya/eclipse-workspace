@@ -33,7 +33,6 @@
     <fullyQualifiedTypeName name="framework_oop_arrays.utils.validators"/>
     <fullyQualifiedTypeName name="javax.swing.JOptionPane"/>
     <fullyQualifiedTypeName name="framework_oop_arrays.modules.products.utils.CRUD_array.functions_read"/>
-    <fullyQualifiedTypeName name="framework_oop_arrays.modules.products.utils.functions_find"/>
     <fullyQualifiedTypeName name="framework_oop_arrays.utils.menus"/>
     <fullyQualifiedTypeName name="framework_oop_arrays.modules.products.utils.CRUD_simple.functions_read"/>
     <fullyQualifiedTypeName name="framework_oop_arrays.modules.products.utils.CRUD_simple.functions_update"/>
@@ -60,4 +59,5 @@
     <fullyQualifiedTypeName name="framework_oop_arrays.modules.products.utils.CRUD_dummies.CRUD.functions_update_dummies"/>
     <fullyQualifiedTypeName name="framework_oop_arrays.modules.products.utils.CRUD_dummies.CRUD.functions_delete_dummies"/>
     <fullyQualifiedTypeName name="framework_oop_arrays.modules.products.utils.CRUD_dummies.CRUD.functions_print_dummies"/>
+    <fullyQualifiedTypeName name="framework_oop_arrays.modules.products.utils.functions_find"/>
 </qualifiedTypeNameHistroy>

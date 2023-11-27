@@ -2,10 +2,6 @@ package framework_oop_arrays;
 
 import javax.swing.JOptionPane;
 
-import framework_oop_arrays.modules.products.classes.accessory;
-import framework_oop_arrays.modules.products.classes.laptop;
-import framework_oop_arrays.modules.products.classes.smartphone;
-import framework_oop_arrays.modules.products.utils.CRUD_dummies.laptop_dum;
 import framework_oop_arrays.modules.products.utils.CRUD_dummies.CRUD.functions_create_dummies;
 import framework_oop_arrays.modules.products.utils.CRUD_dummies.CRUD.functions_update_dummies;
 import framework_oop_arrays.modules.products.utils.CRUD_simple.functions_create;
@@ -16,11 +12,6 @@ import framework_oop_arrays.modules.products.utils.CRUD_simple.functions_update;
 import framework_oop_arrays.utils.menus;
 
 public class menu {
-	public static laptop L = null;
-	public static laptop_dum L_dum = null;
-
-	public static smartphone S = null;
-	public static accessory A = null;
 
 	public static void menu() {
 		int option_prod = 0, option_dum = 0, option_CRUD = 0;

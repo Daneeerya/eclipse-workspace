@@ -124,7 +124,6 @@ public class CRUD_arrays_dummies {
 	public static void updateProduct(product product_dum) {
 		String cad = "";
 		int attrs = 0;
-		System.out.println(product_dum);
 		if (product_dum instanceof laptop) {
 			laptop l1 = (laptop) product_dum;
 
@@ -146,7 +145,7 @@ public class CRUD_arrays_dummies {
 				cad = "Price updated to " + l1.getPrice();
 				break;
 			case 3: // ID
-				cad = "Esta opción no se puede modificar";
+				cad = "This option cannot be modified";
 				break;
 			case 4: // Purchase Date
 				l1.setpurchaseDate(new date_object("03/05/2000"));
@@ -154,11 +153,11 @@ public class CRUD_arrays_dummies {
 				break;
 			case 5: // Delivery Date
 				l1.setdeliveryDate(new date_object("05/05/2000"));
-				cad = "Delivery Date update to" + l1.getdeliveryDate();
+				cad = "Delivery Date update to " + l1.getdeliveryDate();
 				break;
 			case 6: // Return Date
 				l1.setreturnDate(null);
-				cad = "Return Date update to" + l1.getreturnDate();
+				cad = "Return Date update to " + l1.getreturnDate();
 				break;
 			case 7: // Start Promo Date
 				l1.setstartPromoDate(new date_object("01/01/2000"));
@@ -194,19 +193,19 @@ public class CRUD_arrays_dummies {
 				cad = "Price updated to " + S1.getPrice();
 				break;
 			case 3: // ID
-				cad = "Esta opción no se puede modificar";
+				cad = "This option cannot be modified";
 				break;
 			case 4: // Purchase Date
 				S1.setpurchaseDate(new date_object("03/05/2000"));
-				cad = "Purchase Date update to" + S1.getpurchaseDate();
+				cad = "Purchase Date update to " + S1.getpurchaseDate();
 				break;
 			case 5: // Delivery Date
 				S1.setdeliveryDate(new date_object("05/05/2000"));
-				cad = "Delivery Date update to" + S1.getdeliveryDate();
+				cad = "Delivery Date update to " + S1.getdeliveryDate();
 				break;
 			case 6: // Return Date
 				S1.setreturnDate(null);
-				cad = "Return Date update to" + S1.getreturnDate();
+				cad = "Return Date update to " + S1.getreturnDate();
 				break;
 			case 7: // Start Promo Date
 				S1.setstartPromoDate(new date_object("01/01/2000"));
@@ -245,19 +244,19 @@ public class CRUD_arrays_dummies {
 				cad = "Price updated to " + A1.getPrice();
 				break;
 			case 3: // ID
-				cad = "Esta opción no se puede modificar";
+				cad = "This option cannot be modified";
 				break;
 			case 4: // Purchase Date
 				A1.setpurchaseDate(new date_object("03/05/2000"));
-				cad = "Purchase Date update to" + A1.getpurchaseDate();
+				cad = "Purchase Date update to " + A1.getpurchaseDate();
 				break;
 			case 5: // Delivery Date
 				A1.setdeliveryDate(new date_object("05/05/2000"));
-				cad = "Delivery Date update to" + A1.getdeliveryDate();
+				cad = "Delivery Date update to " + A1.getdeliveryDate();
 				break;
 			case 6: // Return Date
 				A1.setreturnDate(null);
-				cad = "Return Date update to" + A1.getreturnDate();
+				cad = "Return Date update to " + A1.getreturnDate();
 				break;
 			case 7: // Start Promo Date
 				A1.setstartPromoDate(new date_object("01/01/2000"));

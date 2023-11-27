@@ -6,40 +6,40 @@
 		<item key="wholeword" value="false"/>
 		<item key="incremental" value="false"/>
 		<item key="isRegEx" value="false"/>
-		<item key="selection" value=""/>
+		<item key="selection" value="updated to "/>
 		<list key="findhistory">
+			<item value="updated to"/>
+			<item value="update to"/>
+			<item value="Esta opción no se puede modificar"/>
 			<item value="sys"/>
+			<item value="S1"/>
+			<item value="smartphone"/>
+			<item value="l1"/>
+			<item value="laptop"/>
+			<item value="S"/>
+			<item value="(A)"/>
+			<item value="(S)"/>
 			<item value="productlaptop_dummies"/>
 			<item value="product"/>
 			<item value="&#x09;&#x09;&#x09;&#x09;JOptionPane.showMessageDialog(null, &quot;Thanks for use the aplication&quot;);"/>
 			<item value="float"/>
-			<item value="int"/>
-			<item value="date_object"/>
-			<item value="ask_laptop_dummies"/>
-			<item value="products"/>
-			<item value="[]"/>
-			<item value="sy"/>
-			<item value="system"/>
-			<item value="3"/>
-			<item value="Data"/>
-			<item value="[i]"/>
 		</list>
 		<list key="replacehistory">
+			<item value="updated to "/>
+			<item value="update to "/>
+			<item value="This option cannot be modified"/>
+			<item value="A1"/>
+			<item value="accessory"/>
+			<item value="S1"/>
+			<item value="smartphone"/>
+			<item value="A"/>
+			<item value="()"/>
 			<item value="product_dum"/>
 			<item value=""/>
 			<item value="products_dummies"/>
 			<item value="date_object"/>
 			<item value="laptop_dum"/>
 			<item value="new date_object(30, 8, 1989)"/>
-			<item value="JOptionPane.showMessageDialog(null, &quot;You must create the laptop first!&quot;, &quot;Errorempty&quot;,"/>
-			<item value="smartphone"/>
-			<item value="S1"/>
-			<item value="product"/>
-			<item value="A1"/>
-			<item value="accessory"/>
-			<item value="CRUD_simple"/>
-			<item value="option_prod"/>
-			<item value="option_dum"/>
 		</list>
 	</section>
 	<section name="org.eclipse.ui.texteditor.FindReplaceDialog_dialogBounds">
