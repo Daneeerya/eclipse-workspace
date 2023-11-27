@@ -17,9 +17,9 @@ public class CRUD_arrays_dummies {
 		laptop l = null;
 		final int LONGDUMMIES = 5;
 		int[] stock = { 1, 2, 3, 4, 5 };
-		float[] weight = { 1.0f, 2.0f, 3.0f, 4.0f, 5.0f }; // 2
-		float[] price = { 1.0f, 2.0f, 3.0f, 4.0f, 5.0f }; // 3
-		String[] ID = { "123-A", "123-B", "123-C", "123-D", "123-E" }; // 5
+		float[] weight = { 1.0f, 2.0f, 3.0f, 4.0f, 5.0f };
+		float[] price = { 1.0f, 2.0f, 3.0f, 4.0f, 5.0f };
+		String[] ID = { "123-A", "123-B", "123-C", "123-D", "123-E" };
 		date_object[] purchaseDate = { new date_object("01/01/2000"), new date_object("02/01/2000"),
 				new date_object("03/01/2000"), new date_object("04/01/2000"), new date_object("05/01/2000") };
 		date_object[] deliveryDate = { new date_object("02/01/2000"), new date_object("03/01/2000"),
@@ -30,9 +30,8 @@ public class CRUD_arrays_dummies {
 				new date_object("03/01/2000"), new date_object("31/01/2000"), new date_object("31/01/2000") };
 		date_object[] endPromoDate = { new date_object("01/02/2000"), new date_object("20/02/2000"),
 				new date_object("03/05/2000"), new date_object("31/02/2000"), new date_object("31/03/2000") };
-		float[] price_promo = { 10.0f, 20.0f, 30.0f, 40.0f, 50.0f }; // 2
-		float[] price_total = { 10.0f, 20.0f, 30.0f, 40.0f, 50.0f }; // 2
-
+		float[] price_promo = { 10.0f, 20.0f, 30.0f, 40.0f, 50.0f };
+		float[] price_total = { 10.0f, 20.0f, 30.0f, 40.0f, 50.0f };
 		for (int i = 0; i < LONGDUMMIES; i++) {
 			l = new laptop(stock[i], weight[i], price[i], ID[i], purchaseDate[i], deliveryDate[i], returnDate[i],
 					startPromoDate[i], endPromoDate[i], price_promo[i], price_total[i]);
@@ -44,8 +43,8 @@ public class CRUD_arrays_dummies {
 	}
 
 	public static laptop ask_laptopID() {
-		Singleton.ID_dummies = core_product_dummies.ID("The ID", "ID");
-		return new laptop(Singleton.ID_dummies);
+		String ID = Singleton.ID;
+		return new laptop(ID);
 	}
 
 	public static smartphone ask_smartphone_dummies(int longitud) {
@@ -80,8 +79,8 @@ public class CRUD_arrays_dummies {
 	}
 
 	public static smartphone ask_smartphoneID() {
-		Singleton.ID_dummies = core_product_dummies.ID("The ID", "ID");
-		return new smartphone(Singleton.ID_dummies);
+		String ID = Singleton.ID;
+		return new smartphone(ID);
 	}
 
 	public static accessory ask_accessory_dummies(int longitud) {
@@ -116,16 +115,16 @@ public class CRUD_arrays_dummies {
 	}
 
 	public static accessory ask_accessoryID() {
-		Singleton.ID_dummies = core_product_dummies.ID("The ID", "ID");
-		return new accessory(Singleton.ID_dummies);
+		String ID = Singleton.ID;
+		return new accessory(ID);
 	}
 
 //	UPDATE
-	public static void updateProduct(product product_dum) {
+	public static void updateProduct(product product) {
 		String cad = "";
 		int attrs = 0;
-		if (product_dum instanceof laptop) {
-			laptop l1 = (laptop) product_dum;
+		if (product instanceof laptop) {
+			laptop l1 = (laptop) product;
 
 			String[] opt_attrs = { "Stock", "Weight", "Price", "ID", "Purchase Date", "Delivery Date", "Return Date",
 					"Start Promo Date", "End Promo Date", "Price Promotion" };
@@ -172,8 +171,8 @@ public class CRUD_arrays_dummies {
 				cad = "Price Promotion updated to " + l1.getPrice_promo();
 				break;
 			}
-		} else if (product_dum instanceof smartphone) {
-			smartphone S1 = (smartphone) product_dum;
+		} else if (product instanceof smartphone) {
+			smartphone S1 = (smartphone) product;
 
 			String[] opt_attrs = { "Stock", "Weight", "Price", "ID", "Purchase Date", "Delivery Date", "Return Date",
 					"Start Promo Date", "End Promo Date", "Price Promotion", "Brand" };
@@ -224,8 +223,8 @@ public class CRUD_arrays_dummies {
 				cad = "Brand Promotion updated to " + S1.getBrand();
 				break;
 			}
-		} else if (product_dum instanceof accessory) {
-			accessory A1 = (accessory) product_dum;
+		} else if (product instanceof accessory) {
+			accessory A1 = (accessory) product;
 			String[] opt_attrs = { "Stock", "Weight", "Price", "ID", "Purchase Date", "Delivery Date", "Return Date",
 					"Start Promo Date", "End Promo Date", "Price Promotion", "Brand" };
 			attrs = menus.menu(opt_attrs, "What attribute do you want to set?", "Attributes");

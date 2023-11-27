@@ -5,15 +5,15 @@ import javax.swing.JOptionPane;
 import framework_oop_arrays.modules.products.classes.accessory;
 import framework_oop_arrays.modules.products.classes.laptop;
 import framework_oop_arrays.modules.products.classes.smartphone;
+import framework_oop_arrays.modules.products.utils.functions_find;
 import framework_oop_arrays.modules.products.utils.CRUD_dummies.CRUD_arrays_dummies;
-import framework_oop_arrays.modules.products.utils.CRUD_dummies.functions_find_dummies;
 
 public class functions_create_dummies {
 	public static void create_laptop() {
 		laptop l1 = null;
 		int location = -1;
 		l1 = CRUD_arrays_dummies.ask_laptopID(); // Demane el ID del laptop
-		location = functions_find_dummies.find_product_dum(l1); // En el find busque el laptop
+		location = functions_find.find_product(l1); // En el find busque el laptop
 		if (location != -1) {
 			JOptionPane.showMessageDialog(null, "Cannot save to arraylist because this laptop already exists", "ERROR",
 					JOptionPane.ERROR_MESSAGE);
@@ -29,7 +29,7 @@ public class functions_create_dummies {
 		smartphone S1 = null;
 		int location = -1;
 		S1 = CRUD_arrays_dummies.ask_smartphoneID(); // Demane el ID del smartphone
-		location = functions_find_dummies.find_product_dum(S1); // En el find busque el smartphone
+		location = functions_find.find_product(S1); // En el find busque el smartphone
 		if (location != -1) {
 			JOptionPane.showMessageDialog(null, "Cannot save to arraylist because this smartphone already exists",
 					"ERROR", JOptionPane.ERROR_MESSAGE);
@@ -45,7 +45,7 @@ public class functions_create_dummies {
 		accessory A1 = null;
 		int location = -1;
 		A1 = CRUD_arrays_dummies.ask_accessoryID(); // Demane el ID del accessory
-		location = functions_find_dummies.find_product_dum(A1); // En el find busque el accessory
+		location = functions_find.find_product(A1); // En el find busque el accessory
 		if (location != -1) {
 			JOptionPane.showMessageDialog(null, "Cannot save to arraylist because this accessory already exists",
 					"ERROR", JOptionPane.ERROR_MESSAGE);

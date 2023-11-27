@@ -6,8 +6,10 @@
 		<item key="wholeword" value="false"/>
 		<item key="incremental" value="false"/>
 		<item key="isRegEx" value="false"/>
-		<item key="selection" value="updated to "/>
+		<item key="selection" value=""/>
 		<list key="findhistory">
+			<item value="product_dum"/>
+			<item value="CORE"/>
 			<item value="updated to"/>
 			<item value="update to"/>
 			<item value="Esta opción no se puede modificar"/>
@@ -21,10 +23,9 @@
 			<item value="(S)"/>
 			<item value="productlaptop_dummies"/>
 			<item value="product"/>
-			<item value="&#x09;&#x09;&#x09;&#x09;JOptionPane.showMessageDialog(null, &quot;Thanks for use the aplication&quot;);"/>
-			<item value="float"/>
 		</list>
 		<list key="replacehistory">
+			<item value="product"/>
 			<item value="updated to "/>
 			<item value="update to "/>
 			<item value="This option cannot be modified"/>
@@ -39,7 +40,6 @@
 			<item value="products_dummies"/>
 			<item value="date_object"/>
 			<item value="laptop_dum"/>
-			<item value="new date_object(30, 8, 1989)"/>
 		</list>
 	</section>
 	<section name="org.eclipse.ui.texteditor.FindReplaceDialog_dialogBounds">
