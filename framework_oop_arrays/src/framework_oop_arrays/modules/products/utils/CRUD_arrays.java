@@ -96,7 +96,7 @@ public class CRUD_arrays {
 	public static void readProduct(product product) {
 		String cad = "";
 		int attrs = 0;
-		// Admin
+		// Laptop
 		if (product instanceof laptop) {
 			laptop l1 = (laptop) product;
 			String[] opt_attrs = { "Stock", "Weight", "Price", "ID", "Purchase Date", "Delivery Date", "Return Date",

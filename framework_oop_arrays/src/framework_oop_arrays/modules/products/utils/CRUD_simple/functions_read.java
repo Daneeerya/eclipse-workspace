@@ -11,16 +11,18 @@ import framework_oop_arrays.modules.products.utils.functions_find;
 import framework_oop_arrays.modules.products.utils.special_prod;
 
 public class functions_read {
-	public static void read_laptop(laptop l1) {
+	public static void read_laptop() {
+		laptop l1 = null;
 		int location = -1;
 		if (Singleton.productlaptop.isEmpty()) {
 			JOptionPane.showMessageDialog(null, "You must create the laptop first!", "Error",
 					JOptionPane.ERROR_MESSAGE);
 		} else {
 			l1 = new laptop(special_prod.ComboIDs());
-//			l1 = CRUD_arrays.ask_laptopID();
 			location = functions_find.find_product(l1);
 			if (location == -1) {
+				System.out.println("READ");
+
 				JOptionPane.showMessageDialog(null,
 						"You deleted this product before, now you can't recover it, create it again", "Error",
 						JOptionPane.ERROR_MESSAGE);
@@ -31,7 +33,8 @@ public class functions_read {
 		}
 	}
 
-	public static void read_smartphone(smartphone S1) {
+	public static void read_smartphone() {
+		smartphone S1 = null;
 		int location = -1;
 		if (Singleton.productsmartphone.isEmpty()) {
 			JOptionPane.showMessageDialog(null, "You must create the laptop first!", "Error",
@@ -50,7 +53,8 @@ public class functions_read {
 		}
 	}
 
-	public static void read_accessory(accessory A1) {
+	public static void read_accessory() {
+		accessory A1 = null;
 		int location = -1;
 		if (Singleton.productaccessory.isEmpty()) {
 			JOptionPane.showMessageDialog(null, "You must create the laptop first!", "Error",

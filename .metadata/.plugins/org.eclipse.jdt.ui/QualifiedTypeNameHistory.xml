@@ -1,13 +1,5 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
 <qualifiedTypeNameHistroy>
-    <fullyQualifiedTypeName name="menu_oop_cast.modules.products.classes.laptop"/>
-    <fullyQualifiedTypeName name="menu_oop_cast.menu"/>
-    <fullyQualifiedTypeName name="menu_oop_cast.modules.products.classes.smartphone"/>
-    <fullyQualifiedTypeName name="menu_oop_cast.modules.products.classes.accessory"/>
-    <fullyQualifiedTypeName name="menu_oop_cast.utils.validators"/>
-    <fullyQualifiedTypeName name="menu_oop_cast.utils.insert_data"/>
-    <fullyQualifiedTypeName name="menu_oop_cast.utils.menus"/>
-    <fullyQualifiedTypeName name="menu_oop_cast.modules.products.utils.CRUD"/>
     <fullyQualifiedTypeName name="menu_oop_cast.modules.products.classes.product"/>
     <fullyQualifiedTypeName name="module_oop.utils.validators"/>
     <fullyQualifiedTypeName name="module_oop.modules.products.utils.CRUD"/>
@@ -26,7 +18,6 @@
     <fullyQualifiedTypeName name="module_oop.classes.date_object"/>
     <fullyQualifiedTypeName name="module_oop.modules.products.utils.product_data"/>
     <fullyQualifiedTypeName name="modules_oop2.modules.products.utils.product_data"/>
-    <fullyQualifiedTypeName name="framework_oop_arrays.modules.products.utils.product_data"/>
     <fullyQualifiedTypeName name="framework_oop_arrays.modules.products.utils.CRUD"/>
     <fullyQualifiedTypeName name="framework_oop_arrays.menu"/>
     <fullyQualifiedTypeName name="framework_oop_arrays.modules.products.utils.CRUD_array.functions_create"/>
@@ -38,12 +29,10 @@
     <fullyQualifiedTypeName name="framework_oop_arrays.modules.products.dummies.functions_find_dummies"/>
     <fullyQualifiedTypeName name="framework_oop_arrays.utils.regex"/>
     <fullyQualifiedTypeName name="framework_oop_arrays.utils.insert_data"/>
-    <fullyQualifiedTypeName name="java.lang.System"/>
     <fullyQualifiedTypeName name="framework_oop_arrays.modules.products.utils.CRUD_array.functions_delete"/>
     <fullyQualifiedTypeName name="framework_oop_arrays.utils.validators"/>
     <fullyQualifiedTypeName name="javax.swing.JOptionPane"/>
     <fullyQualifiedTypeName name="framework_oop_arrays.modules.products.utils.CRUD_array.functions_read"/>
-    <fullyQualifiedTypeName name="framework_oop_arrays.modules.products.classes.Singleton"/>
     <fullyQualifiedTypeName name="framework_oop_arrays.modules.products.utils.functions_find"/>
     <fullyQualifiedTypeName name="framework_oop_arrays.utils.menus"/>
     <fullyQualifiedTypeName name="framework_oop_arrays.modules.products.utils.CRUD_simple.functions_read"/>
@@ -51,13 +40,24 @@
     <fullyQualifiedTypeName name="framework_oop_arrays.modules.products.utils.CRUD_simple.functions_delete"/>
     <fullyQualifiedTypeName name="framework_oop_arrays.modules.products.utils.CRUD_simple.functions_create"/>
     <fullyQualifiedTypeName name="framework_oop_arrays.modules.products.utils.CRUD_arrays"/>
-    <fullyQualifiedTypeName name="framework_oop_arrays.modules.products.utils.special_prod"/>
     <fullyQualifiedTypeName name="java.util.Random"/>
     <fullyQualifiedTypeName name="framework_oop_arrays.classes.date_object"/>
     <fullyQualifiedTypeName name="framework_oop_arrays.modules.products.classes.product"/>
-    <fullyQualifiedTypeName name="framework_oop_arrays.modules.products.utils.CRUD_dummies.CRUD.functions_create_dummies"/>
-    <fullyQualifiedTypeName name="framework_oop_arrays.modules.products.utils.CRUD_dummies.functions_find_dummies"/>
     <fullyQualifiedTypeName name="framework_oop_arrays.modules.products.classes.laptop"/>
-    <fullyQualifiedTypeName name="framework_oop_arrays.modules.products.utils.CRUD_dummies.CRUD_arrays_dummies"/>
     <fullyQualifiedTypeName name="java.util.ArrayList"/>
+    <fullyQualifiedTypeName name="framework_oop_arrays.modules.products.utils.special_prod"/>
+    <fullyQualifiedTypeName name="java.lang.Integer"/>
+    <fullyQualifiedTypeName name="java.util.Calendar"/>
+    <fullyQualifiedTypeName name="java.util.Date"/>
+    <fullyQualifiedTypeName name="java.util.GregorianCalendar"/>
+    <fullyQualifiedTypeName name="framework_oop_arrays.modules.products.utils.CRUD_dummies.CRUD_arrays_dummies"/>
+    <fullyQualifiedTypeName name="framework_oop_arrays.modules.products.utils.CRUD_dummies.functions_find_dummies"/>
+    <fullyQualifiedTypeName name="framework_oop_arrays.modules.products.classes.Singleton"/>
+    <fullyQualifiedTypeName name="framework_oop_arrays.modules.products.utils.product_data"/>
+    <fullyQualifiedTypeName name="java.lang.System"/>
+    <fullyQualifiedTypeName name="framework_oop_arrays.modules.products.utils.CRUD_dummies.CRUD.functions_create_dummies"/>
+    <fullyQualifiedTypeName name="framework_oop_arrays.modules.products.utils.CRUD_dummies.CRUD.functions_read_dummies"/>
+    <fullyQualifiedTypeName name="framework_oop_arrays.modules.products.utils.CRUD_dummies.CRUD.functions_update_dummies"/>
+    <fullyQualifiedTypeName name="framework_oop_arrays.modules.products.utils.CRUD_dummies.CRUD.functions_delete_dummies"/>
+    <fullyQualifiedTypeName name="framework_oop_arrays.modules.products.utils.CRUD_dummies.CRUD.functions_print_dummies"/>
 </qualifiedTypeNameHistroy>

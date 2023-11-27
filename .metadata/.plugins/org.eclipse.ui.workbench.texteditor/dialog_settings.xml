@@ -6,27 +6,29 @@
 		<item key="wholeword" value="false"/>
 		<item key="incremental" value="false"/>
 		<item key="isRegEx" value="false"/>
-		<item key="selection" value="Sy"/>
+		<item key="selection" value=""/>
 		<list key="findhistory">
-			<item value="sy"/>
 			<item value="sys"/>
+			<item value="productlaptop_dummies"/>
+			<item value="product"/>
+			<item value="&#x09;&#x09;&#x09;&#x09;JOptionPane.showMessageDialog(null, &quot;Thanks for use the aplication&quot;);"/>
+			<item value="float"/>
+			<item value="int"/>
+			<item value="date_object"/>
+			<item value="ask_laptop_dummies"/>
+			<item value="products"/>
+			<item value="[]"/>
+			<item value="sy"/>
 			<item value="system"/>
 			<item value="3"/>
-			<item value="product"/>
 			<item value="Data"/>
 			<item value="[i]"/>
-			<item value="[]"/>
-			<item value="print"/>
-			<item value="purchaseDate"/>
-			<item value="default"/>
-			<item value="l"/>
-			<item value="laptop"/>
-			<item value="(12 / 12 / 2000)"/>
-			<item value="cad = &quot;You must create the product first!&quot;;"/>
 		</list>
 		<list key="replacehistory">
-			<item value="date_object"/>
+			<item value="product_dum"/>
 			<item value=""/>
+			<item value="products_dummies"/>
+			<item value="date_object"/>
 			<item value="laptop_dum"/>
 			<item value="new date_object(30, 8, 1989)"/>
 			<item value="JOptionPane.showMessageDialog(null, &quot;You must create the laptop first!&quot;, &quot;Errorempty&quot;,"/>
@@ -38,8 +40,6 @@
 			<item value="CRUD_simple"/>
 			<item value="option_prod"/>
 			<item value="option_dum"/>
-			<item value="&quot;There is a stock of &quot;"/>
-			<item value="getstartPromoDate"/>
 		</list>
 	</section>
 	<section name="org.eclipse.ui.texteditor.FindReplaceDialog_dialogBounds">

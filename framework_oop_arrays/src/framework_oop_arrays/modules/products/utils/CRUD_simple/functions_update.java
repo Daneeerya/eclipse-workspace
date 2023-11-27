@@ -31,7 +31,8 @@ public class functions_update {
 		}
 	}
 
-	public static void update_smartphone(smartphone S1) {
+	public static void update_smartphone() {
+		smartphone S1 = null;
 		String cad = "";
 		int location = -1;
 		if (Singleton.productsmartphone.isEmpty()) {
@@ -51,7 +52,8 @@ public class functions_update {
 		}
 	}
 
-	public static void update_accessory(accessory A1) {
+	public static void update_accessory() {
+		accessory A1 = null;
 		String cad = "";
 		int location = -1;
 		if (Singleton.productaccessory.isEmpty()) {

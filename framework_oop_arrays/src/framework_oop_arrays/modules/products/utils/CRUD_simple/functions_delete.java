@@ -10,16 +10,15 @@ import framework_oop_arrays.modules.products.utils.functions_find;
 import framework_oop_arrays.modules.products.utils.special_prod;
 
 public class functions_delete {
-	public static void delete_laptop(laptop l1) {
+	public static void delete_laptop() {
 		int location = -1;
-		String cad = "";
+		laptop l1 = null;
 		if (Singleton.productlaptop.isEmpty()) {
 			JOptionPane.showMessageDialog(null, "You must create the product first!", "Error",
 					JOptionPane.ERROR_MESSAGE);
 		} else {
 			location = -1;
 			l1 = new laptop(special_prod.ComboIDs());
-//			l1 = CRUD_arrays.ask_laptopID();
 			location = functions_find.find_product(l1);
 			if (location != -1) {
 				Singleton.productlaptop.remove(location);
@@ -30,10 +29,10 @@ public class functions_delete {
 						JOptionPane.ERROR_MESSAGE);
 			}
 		}
-		JOptionPane.showMessageDialog(null, cad, "Error", JOptionPane.ERROR_MESSAGE);
 	}
 
-	public static void delete_smartphone(smartphone S1) {
+	public static void delete_smartphone() {
+		smartphone S1 = null;
 		int location = -1;
 		if (Singleton.productsmartphone.isEmpty()) {
 			JOptionPane.showMessageDialog(null, "You must create the product first!", "Error",
@@ -56,8 +55,9 @@ public class functions_delete {
 
 	}
 
-	public static void delete_accessory(accessory A1) {
+	public static void delete_accessory() {
 		int location = -1;
+		accessory A1 = null;
 		if (Singleton.productaccessory.isEmpty()) {
 			JOptionPane.showMessageDialog(null, "You must create the product first!", "Error",
 					JOptionPane.ERROR_MESSAGE);

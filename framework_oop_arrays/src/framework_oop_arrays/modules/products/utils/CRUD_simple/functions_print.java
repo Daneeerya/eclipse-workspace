@@ -10,8 +10,9 @@ import framework_oop_arrays.modules.products.utils.functions_find;
 import framework_oop_arrays.modules.products.utils.special_prod;
 
 public class functions_print {
-	public static void print_laptop(laptop l1) {
+	public static void print_laptop() {
 		int location = -1;
+		laptop l1 = null;
 		if (Singleton.productlaptop.isEmpty()) {
 			JOptionPane.showMessageDialog(null, "You must create the laptop first!", "Errorempty",
 					JOptionPane.ERROR_MESSAGE);
@@ -31,7 +32,8 @@ public class functions_print {
 		}
 	}
 
-	public static void print_smartphone(smartphone S1) {
+	public static void print_smartphone() {
+		smartphone S1 = null;
 		int location = -1;
 		if (Singleton.productsmartphone.isEmpty()) {
 			JOptionPane.showMessageDialog(null, "You must create the smartphone first!", "Errorempty",
@@ -52,7 +54,8 @@ public class functions_print {
 		}
 	}
 
-	public static void print_accessory(accessory A1) {
+	public static void print_accessory() {
+		accessory A1 = null;
 		int location = -1;
 		if (Singleton.productaccessory.isEmpty()) {
 			JOptionPane.showMessageDialog(null, "You must create the accessory first!", "Errorempty",

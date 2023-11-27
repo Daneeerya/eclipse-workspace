@@ -10,8 +10,9 @@ import framework_oop_arrays.modules.products.utils.CRUD_arrays;
 import framework_oop_arrays.modules.products.utils.functions_find;
 
 public class functions_create {
-	public static void create_laptop(laptop l1) {
+	public static void create_laptop() {
 		int location = -1;
+		laptop l1 = null;
 		l1 = CRUD_arrays.ask_laptopID(); // Demane el ID del laptop
 		location = functions_find.find_product(l1); // En el find busque el laptop
 		if (location != -1) {
@@ -25,7 +26,8 @@ public class functions_create {
 		}
 	}
 
-	public static void create_smartphone(smartphone S1) {
+	public static void create_smartphone() {
+		smartphone S1 = null;
 		int location = -1;
 		S1 = CRUD_arrays.ask_smartphoneID(); // Demane el ID del smartphone
 		location = functions_find.find_product(S1); // En el find busque el smartphone
@@ -40,7 +42,8 @@ public class functions_create {
 		}
 	}
 
-	public static void create_accessory(accessory A1) {
+	public static void create_accessory() {
+		accessory A1 = null;
 		int location = -1;
 		A1 = CRUD_arrays.ask_accessoryID();
 		location = functions_find.find_product(A1);
